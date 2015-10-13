@@ -1,0 +1,11 @@
+<div layout-fill  class="exposedTo">
+   <div layout="row" >
+      <div class="sectionHeading"flex="10">EXPOSED TO</div>
+      <div flex="60" offset="5">
+         <span ng-repeat="exp in exposed track by $index" >
+            {{exp}}
+            <span  class="comma" ng-if="$index < exposed.length-1">,&nbsp;</span>
+         </span>
+      </div>
+   </div>
+</div>

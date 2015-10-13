@@ -1,0 +1,20 @@
+
+<div layout-fill  class="resumeVolunteer">
+   <div layout="row">
+      <div  class="sectionHeading"flex="15" offset="0">VOLUNTEER EXPERIENCE</div>
+   </div>
+   <div ng-repeat="vol in volunteer track by $index" layout-margin>
+      <div layout="row">
+         <div flex="55" offset="15"class="titleRow">{{vol.place}} - {{vol.location}}</div>
+         <div flex="30" offset="5" class="titleRow">{{vol.startDate}}-{{vol.endDate}}</div>
+      </div>
+      <div layout="column">
+         <div layout="row">
+             <div flex="40"  offset="20" class="myTitle"> {{vol.title}}</div>
+         </div>
+         <div layout="column"  class="other"  offset="15">
+            {{vol.other}}
+         </div>
+      </div>
+   </div>
+</div>

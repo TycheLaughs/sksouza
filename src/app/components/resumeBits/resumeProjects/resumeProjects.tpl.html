@@ -1,0 +1,54 @@
+
+<div layout-fill  class="resumeProjects">
+   <div layout="row">
+      <div  class="sectionHeading"flex="15" offset="0">PROJECT EXPERIENCE</div>
+   </div>
+   <div ng-repeat="pro in projects track by $index" layout-margin ng-if="pro.showDefault=='true'">
+
+      <div layout="row">
+         <div flex="55" offset="15"class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
+         <div flex="30" offset="5" class="titleRow">{{pro.date}}
+            <span ng-if="pro.hasDateRange == 'true'">-{{pro.endDate}}</span>
+         </div>
+      </div>
+      <div layout="column">
+         <div layout="row">
+             <div flex="40"  offset="20" class="myTitle"> {{pro.title}}</div>
+         </div>
+         <div layout="column">
+           <ul class="xpDesc">
+               <li offset="15" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
+                {{desc}}
+             </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div layout="row">
+      <span class="toggler" offset="15">
+         <a ng-click="toggleProj()" ng-if="!toggleProjects">Show More Projects <i class="fa fa-angle-down"></i></a>
+         <a ng-click="toggleProj()" ng-if="toggleProjects">Hide More <i class="fa fa-angle-up"></i></a>
+      </span>
+   </div>
+   <div ng-repeat="pro in projects track by $index" layout-margin ng-if="pro.showDefault=='false' && toggleProjects">
+
+      <div layout="row">
+         <div flex="55" offset="15"class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
+         <div flex="30" offset="5" class="titleRow">{{pro.date}}
+            <span ng-if="pro.hasDateRange == 'true'">-{{pro.endDate}}</span>
+         </div>
+      </div>
+      <div layout="column">
+         <div layout="row">
+             <div flex="40"  offset="20" class="myTitle"> {{pro.title}}</div>
+         </div>
+         <div layout="column">
+           <ul class="xpDesc">
+               <li offset="15" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
+                {{desc}}
+             </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>

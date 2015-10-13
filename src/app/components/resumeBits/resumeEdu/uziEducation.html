@@ -1,0 +1,25 @@
+<div layout-fill  class="education">
+   <div ng-repeat="ed in education track by $index" layout-margin>
+      <div layout="row" >
+         <div  ng-if="$index === 0"class="sectionHeading"flex="5">EDUCATION</div>
+         <div ng-if="$index !== 0" flex="50" offset="15"class="titleRow">{{ed.degree}}</div>
+         <div ng-if="$index === 0" flex="50" offset="10" class="titleRow">{{ed.degree}}</div>
+         <div flex="30" offset="10" class="titleRow">{{ed.degreeDate}}</div>
+      </div>
+      <div layout="column">
+         <div layout="row">
+            <div flex="40" offset="20">{{ed.school}}</div>
+            <div flex>GPA: {{ed.gpa}}</div>
+         </div>
+         <div layout="row">
+            <div layout="row" flex="80" offset="20" class="hon">
+               <span class="honors">Honors: </span>
+               <span ng-repeat="hon in ed.honors track by $index">
+                  {{hon}}
+                  <span  class="comma" ng-if="$index < ed.honors.length-1">,&nbsp;</span>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

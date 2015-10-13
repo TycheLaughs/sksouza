@@ -1,0 +1,11 @@
+<div layout-fill  class="resumeOther">
+   <div layout="row" >
+      <div class="sectionHeading"flex="10">OTHER SKILLS</div>
+      <div flex="60" offset="5">
+         <span ng-repeat="o in other track by $index" >
+            {{o}}
+            <span  class="comma" ng-if="$index < other.length-1">,&nbsp;</span>
+         </span>
+      </div>
+   </div>
+</div>

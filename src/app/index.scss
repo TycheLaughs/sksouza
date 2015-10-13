@@ -1,0 +1,172 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: .85em;
+}
+body{
+    background-image: linear-gradient(to top, rgba(75, 96, 119, .25), rgba(2, 14, 33, .25));
+    background-color: #000;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height:300vh;
+    max-height: 400vh;
+    overflow-x:hidden;
+    color: #cddada;
+
+
+}
+[layout=row] {
+  flex-direction: row;
+}
+
+.inner{
+   overflow-y: auto;
+   overflow-x:hidden;
+   padding-top: 5%;
+}
+
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+a{
+   color: #d6fafa;
+   cursor:pointer;
+}
+
+a.md-button.md-raised, .md-button.md-raised{
+   color: #020e21;
+   background-color: #d6fafa;
+}
+a.md-button.md-raised:active, .md-button.md-raised:active,
+md-button.md-raised:hover, a.md-button.md-raised:hover,
+md-button.md-raised:focus, a.md-button.md-raised:focus{
+   color: #020e21;
+   background-color: #d6fafa;
+}
+section.jumbotron {
+  margin-bottom: 30px;
+  padding: 1px 30px;
+  background-color: #5aadbb;
+  text-align: center;
+
+  color: white;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+.techs {
+  display: flex;
+  flex-flow: row wrap;
+
+  md-card {
+    width: 30%;
+
+    img.pull-right {
+      float: right;
+      width: 50px;
+    }
+  }
+}
+
+/* resume styling */
+
+.sectionHeading, .titleRow{
+   font-weight:bold;
+}
+.myTitle, .honors, .footer, .togglers{
+   font-style:italic;
+   color: #d6fafa;
+}
+.myTitle{
+   margin-left:17%;
+}
+ul.xpDesc > li{
+   margin-left:16%
+}
+ul.xpDesc{
+   margin-top: .5%;
+   list-style-type: circle;
+}
+.hon span{
+   position: relative;
+   left: 1.6%;
+}
+.honors{
+   margin-right: .5%;
+}
+.comma{
+   margin-left:-.3%!important;
+}
+.resume{
+   margin-top: 1.5%;
+   color: #cddada;
+}
+.resumeFoot{
+   font-style:italic;
+   margin-top:2%;
+}
+
+/* hr rules found here: https://css-tricks.com/examples/hrs/ */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+}
+.fa-circle{
+   font-size: .5em;
+   padding-top: .8em;
+   padding-right: .6em;
+}
+
+md-tabs-wrapper{
+   margin-right:25%;
+
+}
+.md-tabs, md-toolbar > md-tabs md-tabs-wrapper{
+   background-color: #020e21;
+}
+md-toolbar{
+   max-height: 5%;
+   position:fixed;
+   background-color: #03060B;//#020e21;//020321;
+}
+md-tabs md-ink-bar{
+   color: #d6fafa;
+   background: #c0eff0 none repeat scroll 0% 0%;
+}
+
+#topNav{
+   margin-right:10%;
+}
+.exposedTo{
+   margin-top:.7%;
+}
+.toggler{
+   font-style: italic;
+}
+
+
+
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
