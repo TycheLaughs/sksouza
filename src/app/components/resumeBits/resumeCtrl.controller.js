@@ -24,7 +24,7 @@
       });
 
       $scope.toggleProj= function(){
-        if($scope.toggleProjects == false){
+        if($scope.toggleProjects === false){
            $scope.toggleProjects = true;
         }
         else{
@@ -32,7 +32,7 @@
         }
      };
       $scope.toggleExp= function(){
-        if($scope.toggleXP == false){
+        if($scope.toggleXP === false){
            $scope.toggleXP = true;
         }
         else{
