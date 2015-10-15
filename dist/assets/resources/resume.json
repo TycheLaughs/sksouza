@@ -1,0 +1,288 @@
+{"RESUME":
+   {
+      "HEADER":
+         {
+            "email":"sksouza.art@gmail.com",
+            "gitHub":"github.com/TycheLaughs",
+            "website":"tychelaughs.github.io/sksouza"
+         }
+      ,
+      "EDUCATION":
+         [
+            {
+               "degree":"Candidate for Bachelor of Science in Computer Science",
+               "degreeDate":"Anticipated May 2016",
+               "school":"University of Massachusetts Lowell",
+               "gpa":"3.64",
+               "honors":
+                  [
+                     "Dean's List",
+                     "Multiple Scholarships 2014-16"
+                  ]
+            },
+            {
+               "degree":"  Bachelor of Fine Arts in Interactive Design and Game Development",
+               "degreeDate":"November 2011",
+               "school":"Savannah College of Art and Design",
+               "gpa":"3.24",
+               "honors":
+                  [
+                     "Dean's List",
+                     "Academic Scholarship Fall 2007-11"
+                  ]
+            }
+         ]
+      ,
+      "SKILLS":[
+         "Adobe Creative Suite 5",
+         "After Effects",
+         "AngularJS",
+         "AutoCAD",
+         "Autodesk Maya",
+         "C",
+         "C++",
+         "CSS3",
+         "HTML5",
+         "JavaScript",
+         "jQuery",
+         "JSON",
+         "Microsoft Office Suite",
+         "Microsoft Visual Studio",
+         "Unity3D",
+         "Unreal Development Kit",
+         "ZBrush"
+      ],
+      "EXPOSEDTO":[
+         "Agile development",
+         "Angular Material",
+         "Atom IDE",
+         "C#",
+         "Git",
+         "Grunt",
+         "Gulp",
+         "HTML5 Canvas and SVG",
+         "IA32",
+         "IntelliJ IDEA",
+         "JIRA",
+         "MIPS",
+         "MongoDB",
+         "MySQL",
+         "Netbeans",
+         "NodeJS",
+         "Perl",
+         "PHP",
+         "Python",
+         "SQL",
+         "SVN",
+         "Three.js",
+         "Twitter Bootstrap",
+         "XML"
+      ],
+      "XP":
+         [
+            {
+               "employer":"Crescendo Content Marketing",
+               "location":"Woburn, MA",
+               "startDate":"July 2015",
+               "endDate":"August 2015",
+               "title":"Engineering Co-op (Intern)",
+               "irrelevant":"false",
+               "desc":
+                  ["Worked in Agile environment to increase unit test coverage across project front end by over 10%"]
+            },
+            {
+               "employer":"Percussion Software",
+               "location":"Woburn, MA",
+               "startDate":"May 2015",
+               "endDate":"July 2015",
+               "title":"Engineering Co-op (Intern)",
+               "irrelevant":"false",
+               "desc":
+                  [
+                     "Worked to bring skills to professional level and contributed to initial design of an internal administration tool",
+                     "Helped with the training for fellow interns in understanding of front-end development and programming skills"
+                  ]
+            },
+            {
+               "employer":"University of Massachusetts Lowell",
+               "location":"Lowell, MA",
+               "startDate":"September 2014",
+               "endDate":"present",
+               "title":"Peer Tutor, Computer Science",
+               "irrelevant":"false",
+               "desc":
+                  [
+                     "Guide students to a better understanding of concepts covered in class",
+                     "Help students with debugging techniques, C and C++ syntax"
+                  ]
+            },
+            {
+               "employer":"University of Massachusetts Lowell",
+               "location":"Lowell, MA",
+               "startDate":"September 2014",
+               "endDate":"December 2014",
+               "title":"Grader, Computer Science",
+               "irrelevant":"false",
+               "desc":
+                  ["Reviewed code for correctness, for errors and against rubric; gave feedback"]
+            },
+            {
+               "employer":"Canobie Lake Park",
+               "location":"Salem, NH",
+               "startDate":" August 2013",
+               "endDate":"October 2013",
+               "title":"Screeemfest Actor/Makeup Artist",
+               "irrelevant":"true",
+               "desc":
+                  ["Acted in haunt 'Virus'", "Applied horror makeup to other actors and self within allotted time"]
+            },
+            {
+               "employer":"United Parcel Service",
+               "location":"Nashua, NH",
+               "startDate":"November 2012",
+               "endDate":"December 2012",
+               "title":"Seasonal Driver Helper",
+               "irrelevant":"true",
+               "desc":
+                  ["Ensured delivery of parcels from package car to doorstep in a timely, efficient and safe manner during peak season"]
+            },
+            {
+               "employer":"Macy's Inc.",
+               "location":"Salem, NH",
+               "startDate":"November 2011",
+               "endDate":"December 2011",
+               "title":"Seasonal Fragrance and Cosmetics Ringer",
+               "irrelevant":"true",
+               "desc":
+                  ["Rang up purchases", "Processed returns and Macy's Card payments", "Assisted with maintenance of displays and display cases"]
+            }
+
+         ]
+      ,
+      "PROJECTS":
+         [
+            {
+               "projectTitle":"Dinner Wizard",
+               "projectDesc":"Interactive Meal Suggestion App, AngularJS",
+               "hasDateRange":"false",
+               "date":"Spring 2015",
+               "endDate":"",
+               "title":"Programmer/Designer/UI",
+               "desc":
+                  ["Designed and implemented front end", "Provided all ingredient and combination data for back end", "Created task lists and schedule for semester; wrote project proposal, status reports and test documents"],
+               "showDefault":"true"
+            },
+            {
+               "projectTitle":"Those Darn Dastardly Dragon Attacks!",
+               "projectDesc":"Text-based Game in C++",
+               "hasDateRange":"false",
+               "date":"Summer 2014",
+               "endDate":"",
+               "title":"Programmer/Designer",
+               "desc":
+                  ["Implemented entire castle defense game with room for more planned features"],
+               "showDefault":"true"
+            },
+            {
+               "projectTitle":"Sira",
+               "projectDesc":"First-Person Survival-Puzzler, vertical slice only, UDK",
+               "hasDateRange":"true",
+               "date":"Fall 2011",
+               "endDate":"Spring 2012",
+               "title":"FX Artist",
+               "desc":
+                  ["Created various real-time particle effects in UDK as per given specifications from main project team"],
+               "showDefault":"true"
+            },
+            {
+               "projectTitle":"Autumn Falling",
+               "projectDesc":"Directed Game Pre-visualization Project",
+               "hasDateRange":"false",
+               "date":"Fall 2011",
+               "endDate":"",
+               "title":"Artist(2D)",
+               "desc":
+                  ["Designed characters, creatures, environmental assets, items, UI and an interactive quest dialogue sequence", "Presented and delivered all finished concepts to art team and Project Director"],
+               "showDefault":"true"
+            },
+            {
+               "projectTitle":"Codex",
+               "projectDesc":"2.5D Side-scrolling platformer, Unity3D",
+               "hasDateRange":"false",
+               "date":"Spring 2011",
+               "endDate":"",
+               "title":"Writer/Designer/Artist/VFX",
+               "desc":
+                  ["Team used Agile/SCRUM development methods successfully to monitor and increase productivity", "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic","Designed and implemented paper-burning and other effects in Unity"],
+               "showDefault":"true"
+            },
+            {
+               "projectTitle":"Fate Saga",
+               "projectDesc":"Animation Trailer and Pilot by Dana Corrigan",
+               "hasDateRange":"true",
+               "date":"Winter 2010",
+               "endDate":"Spring 2011",
+               "title":"Texture Artist",
+               "desc":
+                  ["Painted textures for Crystalin Tavern interior and instructed other artists on project in UV mapping techniques"],
+               "showDefault":"false"
+            },
+            {
+               "projectTitle":"Sight Unseen",
+               "projectDesc":"Cthulu Live LARP supplement written by William Thrasher",
+               "hasDateRange":"false",
+               "date":"Spring 2011",
+               "endDate":"",
+               "title":"GM/Coordinator/'Catcher'",
+               "desc":
+                  ["Obtained the space from the school and worked with catchers to prepare the space and sensory materials", "Coordinated with actors and catchers in keeping the LARP participants from injury while blindfolded"],
+               "showDefault":"false"
+            },
+            {
+               "projectTitle":"Venyar",
+               "projectDesc":"Homebrew Tabletop RPG",
+               "hasDateRange":"true",
+               "date":"Spring 2009",
+               "endDate":"Spring 2011",
+               "title":"GM/Storyteller",
+               "desc":
+                  ["Created world and multi-threaded narrative for the 2-year game","Designed and implemented over forty characters in an evolving system","Prepared materials and supplements for every weekly session"],
+               "showDefault":"false"
+            },
+            {
+               "projectTitle":"Global Incineration",
+               "projectDesc":"Side-scrolling reverse Brick Break, UDK",
+               "hasDateRange":"false",
+               "date":"Winter 2011, Global Game Jam",
+               "endDate":"",
+               "title":"Artist",
+               "desc":
+                  ["Created and implemented particle effects","Summarized game's message for display prior to game credits "],
+               "showDefault":"false"
+            }
+         ],
+      "VOLUNTEER":
+         [
+            {
+               "place":"MSPCA at Nevins Farm",
+               "location":"Methuen, Massachusetts",
+               "startDate":"August 2013",
+               "endDate":"present",
+               "title":"Volunteer, Cat Caretaker",
+               "other":""
+            },
+            {
+               "place":"Windham Nesmith Library",
+               "location":"Windham, New Hampshire",
+               "startDate":"July 2006",
+               "endDate":"present",
+               "title":"Library Volunteer, Re-circulation",
+               "other":"Murray Levin Volunteer of the Year Award received April 2015"
+            }
+         ]
+      ,
+      "OTHERSKILLS":
+         ["Theatrical makeup design and application, cash register operation, some coversational French"]
+
+  }
+}
