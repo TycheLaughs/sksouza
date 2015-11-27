@@ -25,27 +25,69 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-      <header>
+   <header ng-controller="indexCtrl">
 
-      <md-toolbar layout="row" layout-align="space-between start">
-         <span ><img class="logoTop" src="/assets/images/UziLogo01a.png"/></span>
-         <span class="myName"><h3>Susan Souza</h3></span>
-         <span id="topNav">
-            <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" >
-                  Resume
-             </md-button>
-             <md-button ui-sref="code"  ui-sref-active='md-raised' aria-label="Code">
-                Code
-             </md-button>
-             <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
-                Projects
-             </md-button>
-            <!-- <md-button   ui-sref="projects" ui-sref-active='md-raised'  aria-label="Writing" >
-                Writing
-             </md-button>-->
-         </span>
-      </md-toolbar>
+         <md-toolbar layout="row" layout-align="space-around center"><!-- -->
+            <span hide-sm><img class="logoTop" src="/assets/images/UziLogo01a.png"/></span>
+            <span class="myName" hide-md hide-sm><h3>Susan Souza</h3></span>
+            <span class="myName myNameSm" hide-gt-md><h3>Susan Souza</h3></span>
+
+            <span id="topNav" flex-shrink hide-sm hide-md>
+
+           <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" >
+              Resume
+         </md-button>
+         <!--<md-button ui-sref="code"  ui-sref-active='md-raised' aria-label="Code">
+            Code
+         </md-button>-->
+         <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
+            Projects
+         </md-button>
+        <!-- <md-button   ui-sref="projects" ui-sref-active='md-raised'  aria-label="Writing" >
+            Writing
+         </md-button>-->
+
+
+     </span>
+     <span flex-shrink hide-gt-md>
+
+    <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" ng-if="state.current.name != 'home'">
+       Resume
+  </md-button>
+  <!--<md-button ui-sref="code"  ui-sref-active='md-raised' aria-label="Code">
+     Code
+  </md-button>-->
+  <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects"  ng-if="state.current.name != 'projects'">
+     Projects
+  </md-button>
+ <!-- <md-button   ui-sref="projects" ui-sref-active='md-raised'  aria-label="Writing" >
+     Writing
+  </md-button>-->
+
+
+</span>
+
+<!--
+            <md-menu hide-gt-md >
+               <md-button aria-label="Navigation Menu" ng-click="$mdOpenMenu($event)" flex-shrink>Nav</md-button>
+               <md-menu-content width="1" flex-shrink>
+                  <md-menu-item>
+                  <md-button ui-sref="home"  aria-label="Resume" class="menuThing" flex-shrink>
+                     Resume
+                    </md-button>
+                 </md-menu-item>
+                    <md-menu-item>
+                  <md-button  ui-sref="projects"  aria-label="Projects" class="menuThing" flex-shrink>
+                    Projects
+                  </md-button>
+                  </md-menu-item>
+               </md-menu-content>
+            </md-menu>
+-->
+            </md-toolbar>
+
       </header>
+
       <div ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->

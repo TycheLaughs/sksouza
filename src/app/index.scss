@@ -6,15 +6,30 @@
 // endbower
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
 
+/**
+#01080C dark dark dark blue
+#010E16 dark dark blue
+#011621 another dark blue
+#01202F md dark blue
+#011E38 dark blue
+#1ED1FB light blue
+#70C9E3 bright pale blue
+#A6C9E3 pale pale blue
+#0E6791 med blue
+#275961 faded blue
+#01B2D5 bright blue
+**/
 html {
-  font-family: 'Roboto Slab', serif;
-  font-size: .85em;
+   font-family: 'Roboto Slab', serif;
+   font-size: .8em;
+   background-color: #000;
 }
+
 body{
-    background-image: linear-gradient(to top, rgba(75, 96, 119, .25), rgba(2, 14, 33, .25));
-    background-color: #000;
+    background-image: linear-gradient(to top,#011621, #010E16);
     background-attachment: fixed;
     background-repeat: no-repeat;
     min-height:300vh;
@@ -24,19 +39,32 @@ body{
 
 
 }
+span{
+   position: relative;
+}
 p{
    font-size: 1.2em;
 }
+.workDamnit{
+   z-index:2;
+   //margin-top:20%;
+   //position:absolute;
+}
 .myName{
-   font-family: 'Permanent Marker', cursive;
+   //font-family: 'Maven Pro', sans-serif;
+   font-family: 'Architects Daughter', cursive;
    font-size: 1.7em;
-   color: #02687B;//#51AABA;//#51AABA;//#6BAFBB;
+   color: #70C9E3;//#51AABA;//#51AABA;//#6BAFBB;
    position:relative;
-   left:8%;
+   //left:8%;
+   //
    //text-shadow: #3F97A7 .1em 0 1px,#3F97A7 0 -.1em 1px, #3F97A7 0 .1em 1px,#3F97A7 -.1em 0 1px;
 }
 .myName > h3{
    margin-top:.125em;
+}
+.myNameSm{
+   margin-right: 25%;
 }
 [layout=row] {
   flex-direction: row;
@@ -46,6 +74,7 @@ p{
    overflow-y: auto;
    overflow-x:hidden;
    padding-top: 5%;
+
 }
 
 
@@ -58,19 +87,19 @@ p{
 }
 
 a{
-   color: #d6fafa;
+   color: #A6C9E3;
    cursor:pointer;
 }
 
 a.md-button.md-raised, .md-button.md-raised{
-   color: #020e21;
-   background-color: #d6fafa;
+   color: #010E16;
+   background-color: #A6C9E3;
 }
 a.md-button.md-raised:active, .md-button.md-raised:active,
 md-button.md-raised:hover, a.md-button.md-raised:hover,
 md-button.md-raised:focus, a.md-button.md-raised:focus{
-   color: #020e21;
-   background-color: #d6fafa;
+   color: #010E16;
+   background-color: #A6C9E3;
 }
 section.jumbotron {
   margin-bottom: 30px;
@@ -106,7 +135,7 @@ section.jumbotron {
 }
 .myTitle, .honors, .footer, .togglers{
    font-style:italic;
-   color: #d6fafa;
+   color: #70C9E3;
 }
 .myTitle{
    margin-left:17%;
@@ -130,7 +159,7 @@ ul.xpDesc{
 }
 .resume{
    margin-top: 1.5%;
-   color: #cddada;
+   color: #A6C9E3;
 }
 .resumeFoot{
    font-style:italic;
@@ -143,33 +172,38 @@ hr {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
 }
+
 .fa-circle{
    font-size: .5em;
    padding-top: .8em;
    padding-right: .6em;
 }
-
+/*
 md-tabs-wrapper{
-   margin-right:25%;
+   //margin-right:25%;
 
 }
 .md-tabs, md-toolbar > md-tabs md-tabs-wrapper{
-   background-color: #020e21;
-}
+   background-color: #010E16;
+}*/
 md-toolbar{
+   top:0;
    max-height: 5%;
    position:fixed;
-   background-color: #03060B;//#020e21;//020321;
+   background-color: #010E16;//#020e21;//020321;
 }
+md-toolbar:not(.md-menu-toolbar){
+   max-height: 5%;
+   position:fixed;
+   background-color: #010E16;//#020e21;//020321;
+}
+/*
 md-tabs md-ink-bar{
-   color: #d6fafa;
-   background: #c0eff0 none repeat scroll 0% 0%;
-}
+   color: #A6C9E3;
+   background: #70C9E3 none repeat scroll 0% 0%;
+}*/
 .logoTop{
    margin-left:.5%;
-}
-#topNav{
-   margin-right:8%;
 }
 .exposedTo{
    margin-top:.7%;
@@ -178,9 +212,74 @@ md-tabs md-ink-bar{
    font-style: italic;
 }
 
+.project-sheet{
+   border: 4px solid #A6C9E3;
+   border-radius: 12px;
+   //width:100%;
+   height:90vh;
 
+}
 
+@media(max-width:600px){
+   html{
+      font-size: .48em;
+   }
+   .myNameSm{
+      font-size:.7em;
+   }
+   .md-button{
+      font-size:.5em;
+   }
+   md-toolbar{
+      max-height: 25px;
+   }
 
+   .inner{
+      margin-top:40px;
+   }
+}
+@media(max-width:960px){
+   html{
+      font-size: .6em;
+   }
+   .md-button{
+      font-size:.5em;
+   }
+   .myNameSm{
+      font-size:.8em;
+   }
+   md-toolbar{
+      max-height: 25px;
+   }
+
+   .inner{
+      margin-top:40px;
+   }
+}
+@media(max-width:1200px){}
+@media(min-width:1201px){}
+
+/*
+.window-holder {
+    border: 2px solid hotPink;
+    height: 450px;
+    position: relative;
+    width: 400px;
+    -moz-perspective: 1000px;
+    -moz-perspective-origin: 50% 0;
+}
+.window {
+    background-color: skyBlue;
+    height: 200px;
+    left: 50%;
+    margin: -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    -moz-transform: rotateX(45deg);
+}
+
+*/
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
