@@ -9,7 +9,7 @@
 
          return {
             getResume: function(){
-                     return $http.get('../../assets/resources/resume.json').then(function(response){
+                     return $http.get('sksouza/assets/resources/resume.json').then(function(response){
                         resumeData = response.data.RESUME;
                         //console.log('Education:' + JSON.stringify(resumeData.EDUCATION));
                         return response;
