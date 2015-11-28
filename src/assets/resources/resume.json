@@ -213,7 +213,7 @@
                "endDate":"",
                "title":"Writer/Designer/Artist/VFX",
                "desc":
-                  ["Team used Agile/SCRUM development methods successfully to monitor and increase productivity", "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic","Designed and implemented paper-burning and other effects in Unity"],
+                  ["Team used Agile/SCRUM development methods successfully to monitor and increase productivity", "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic", "Designed and implemented paper-burning and other effects in Unity"],
                "showDefault":"true"
             },
             {
@@ -246,7 +246,7 @@
                "endDate":"Spring 2011",
                "title":"GM/Storyteller",
                "desc":
-                  ["Created world and multi-threaded narrative for the 2-year game","Designed and implemented over forty characters in an evolving system","Prepared materials and supplements for every weekly session"],
+                  ["Created world and multi-threaded narrative for the 2-year game", "Designed and implemented over forty characters in an evolving system", "Prepared materials and supplements for every weekly session"],
                "showDefault":"false"
             },
             {
@@ -257,7 +257,7 @@
                "endDate":"",
                "title":"Artist",
                "desc":
-                  ["Created and implemented particle effects","Summarized game's message for display prior to game credits "],
+                  ["Created and implemented particle effects", "Summarized game's message for display prior to game credits "],
                "showDefault":"false"
             }
          ],
@@ -282,7 +282,7 @@
          ]
       ,
       "OTHERSKILLS":
-         ["Theatrical makeup design and application, cash register operation, some coversational French"]
+         ["Theatrical makeup design and application, cash register operation, some conversational French"]
 
   }
 }
