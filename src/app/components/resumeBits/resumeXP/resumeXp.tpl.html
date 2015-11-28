@@ -1,21 +1,21 @@
 
 <div layout-fill  class="resumeXp">
    <div layout="row">
-      <div  class="sectionHeading"flex="15" flex-offset="0">TECHNICAL EXPERIENCE</div>
+      <div  class="sectionHeading" flex-gt-sm="15" flex-sm="50" flex-offset="0">TECHNICAL EXPERIENCE</div>
    </div>
    <div ng-repeat="x in xp track by $index" layout-margin ng-if="x.irrelevant == 'false'">
 
       <div layout="row">
-         <div flex="55" flex-offset="15"class="titleRow">{{x.employer}} - {{x.location}}</div>
+         <div flex-gt-sm="55" flex-sm="65" flex-offset-gt-sm="15" flex-offset-sm="10" class="titleRow">{{x.employer}} - {{x.location}}</div>
          <div flex="30" flex-offset="5" class="titleRow">{{x.startDate}}-{{x.endDate}}</div>
       </div>
       <div layout="column">
          <div layout="row">
-             <div flex="40"  flex-offset="20" class="myTitle"> {{x.title}}</div>
+             <div flex  flex-offset="20" class="myTitle"> {{x.title}}</div>
          </div>
          <div layout="column">
            <ul class="xpDesc">
-               <li flex-offset="15" ng-repeat="y in x.desc"  layout="row"><i class="fa fa-circle"></i>
+               <li ng-repeat="y in x.desc"  layout="row"><i class="fa fa-circle"></i>
                 {{y}}
              </li>
             </ul>
@@ -23,7 +23,7 @@
       </div>
    </div>
    <div layout="row">
-      <div  class="sectionHeading"flex="15">OTHER EXPERIENCE</div>
+      <div  class="sectionHeading" flex-gt-sm="15" flex-sm="50" flex-offset="0">OTHER EXPERIENCE</div>
       <span class="toggler">
          <a ng-click="toggleExp()" ng-if="!toggleXP">Show <i class="fa fa-angle-down"></i></a>
          <a ng-click="toggleExp()" ng-if="toggleXP">Hide <i class="fa fa-angle-up"></i></a>
@@ -37,11 +37,11 @@
       </div>
       <div layout="column">
          <div layout="row">
-             <div flex="40"  flex-offset="20" class="myTitle"> {{x.title}}</div>
+             <div flex  flex-offset="20" class="myTitle"> {{x.title}}</div>
          </div>
          <div layout="column">
            <ul class="xpDesc">
-               <li flex-offset="15" ng-repeat="y in x.desc"  layout="row"><i class="fa fa-circle"></i>
+               <li ng-repeat="y in x.desc"  layout="row"><i class="fa fa-circle"></i>
                 {{y}}
              </li>
             </ul>

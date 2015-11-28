@@ -3,18 +3,17 @@
 
   angular
       .module('sksouza')
-      .service('resume', function($http, $q){
+      .service('projects', function($http, $q){
 
-         var resumeData = {};
+         var projectsData = {};
 
          return {
-            getResume: function(){
-                     return $http.get('assets/resources/resume.json').then(function(response){
-                        resumeData = response.data.RESUME;
-                        //console.log('Education:' + JSON.stringify(resumeData.EDUCATION));
+            getProjects: function(){
+                     return $http.get('assets/resources/projects.json').then(function(response){
+                        projectsData = response.data.PROJECTS;
                         return response;
                      }, function(error){
-                        resumeData = {
+                        projectsData = {
                            "HEADER": {
                               "email":"WHOOPS",
                               "gitHub":"GOT BACK AN ERROR",

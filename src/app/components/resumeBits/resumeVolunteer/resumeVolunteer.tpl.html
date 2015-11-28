@@ -1,7 +1,7 @@
 
 <div layout-fill  class="resumeVolunteer">
    <div layout="row">
-      <div  class="sectionHeading"flex="15" flex-offset="0">VOLUNTEER EXPERIENCE</div>
+      <div  class="sectionHeading"flex-gt-sm="15" flex-sm="80" flex-offset="0">VOLUNTEER EXPERIENCE</div>
    </div>
    <div ng-repeat="vol in volunteer track by $index" layout-margin>
       <div layout="row">
@@ -10,7 +10,7 @@
       </div>
       <div layout="column">
          <div layout="row">
-             <div flex="40"  flex-offset="20" class="myTitle"> {{vol.title}}</div>
+             <div flex flex-offset="20" class="myTitle"> {{vol.title}}</div>
          </div>
          <div layout="column"  class="other"  flex-offset="15">
             {{vol.other}}

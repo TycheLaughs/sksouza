@@ -1,7 +1,8 @@
 <div layout-fill  class="skills">
+   <div layout="row" class="sectionHeading"flex="90" hide-gt-sm>TECHNICAL SKILLS &amp; SOFTWARE</div>
    <div layout="row" >
-      <div class="sectionHeading"flex="10">TECHNICAL SKILLS &amp; SOFTWARE</div>
-      <div flex="60" flex-offset="5">
+      <div class="sectionHeading"flex="10" hide-sm>TECHNICAL SKILLS &amp; SOFTWARE</div>
+      <div flex="80" flex-offset-gt-sm="5" flex-offset-sm="10">
          <span ng-repeat="skill in skills track by $index" >
             {{skill}}
             <span  class="comma" ng-if="$index < skills.length-1">,&nbsp;</span>
