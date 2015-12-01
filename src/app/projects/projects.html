@@ -1,8 +1,6 @@
-<div layout="row" layout-align="space-around center" class="inner projects">
-   <div flex="5" flex-gt-md="10">
-   </div>
-   <div class="project-sheet" flex>
-      <div layout="column" layout-align="center center">
+<div layout="row" class="inner projects">
+
+      <!--<div layout="column" layout-align="center center">
         <p>
            Projects section of this site is currently under construction.
         </p>
@@ -14,15 +12,35 @@
            <a href="https://github.com/TycheLaughs/uzi-exercises">here</a>,
            and you can find my very old (art) portfolio website <a href="http://sksdigitalart.com">here</a>.
         </p>
-      </div>
+     </div>-->
+  <div flex-sm="5" flex-md="5" flex-gt-md="10">
+     <i class="fa fa-chevron-left nvLft"></i>
+  </div>
+  <div flex-sm="90" flex-md="90" flex-gt-md="80">
+   <md-tabs  md-no-ink-bar md-swipe-content md-no-ink>
+      <md-tab ng-repeat="p in projects track by $index">
+         <md-tab-label class="md-primary">
+            {{$index + 1}}
+         </md-tab-label>
+         <md-tab-body>
+            <div class="project-sheet" flex>
 
-   <!--<md-tabs>
-      <md-tab ng-repeat="p in projects" label="{{p.projectTitle}}">
-         <div>{{p.title}}</div>
+               <div>
+                  <h2>{{p.projectTitle}}</h2>
+               </div>
+
+               <div class="myTitle">{{p.title}}</div>
+               <div class="projBody">
+                  <div ng-repeat="d in p.projectDesc track by $index">{{d}}</div>
+               </div>
+
+            </div>
+         </md-tab-body>
       </md-tab>
-   </md-tabs>-->
-   </div>
-   <div flex="5" flex-gt-md="10">
+   </md-tabs>
+</div>
+   <div flex-sm="5" flex-md="5" flex-gt-md="10">
+      <i class="fa fa-chevron-right nvRgt"></i>
    </div>
 
 

@@ -48,6 +48,8 @@
          "JSON",
          "Microsoft Office Suite",
          "Microsoft Visual Studio",
+         "SQL and MySQL",
+         "Twitter Bootstrap",
          "Unity3D",
          "Unreal Development Kit",
          "ZBrush"
@@ -55,7 +57,7 @@
       "EXPOSEDTO":[
          "Agile development",
          "Angular Material",
-         "Atom IDE",
+         "Blender",
          "C#",
          "Git",
          "Grunt",
@@ -66,16 +68,14 @@
          "JIRA",
          "MIPS",
          "MongoDB",
-         "MySQL",
          "Netbeans",
          "NodeJS",
          "Perl",
          "PHP",
          "Python",
-         "SQL",
+         "SFML",
          "SVN",
          "Three.js",
-         "Twitter Bootstrap",
          "XML"
       ],
       "XP":

@@ -1,5 +1,5 @@
 {"PROJECTS":
-   [  
+   [
 		{
 		   "projectTitle":"The 'Real' Excalibur",
 		   "projectDesc":["The ruler of this particular kingdom has died a rather sudden death, and, leaving no heirs, it is up to the archaic custom of appointing royalty to the one who wields the legendary artifact [insert name here]. Criers have been sent across the land to declare that he or she who arrives at the capital with said legendary artifact in hand three weeks hence will he named King (or Queen).", "tl;dr: Bring the most [beautiful, brilliant, badass, bloodthirsty] weapon to the funeral; win the kingdom.","This game is planned to be comprised mainly of a crafting system, with more details still under consideration."],
@@ -41,7 +41,7 @@
 		},
 		{
 		   "projectTitle":"Codex",
-		   "projectDesc":["Codex is a 2.5D side-scrolling platformer built in Unity3D. The game follows Sir Quillford, a character in a silly storybook, as he strives to escape the pages of his book, which are, unfortunately, on fire.","This was a 10-week long group senior project completed at Savannah College of Art and Design.","Logo and art direction by Benjamin Ray."],
+		   "projectDesc":["Codex is a 2.5D side-scrolling platformer built in Unity3D. The game follows Sir Quillford, a character in a silly storybook, as he strives to escape the pages of his book, which are, unfortunately, on fire.","This was a 10-week long group senior project completed at Savannah College of Art and Design."],
 		   "hasDateRange":"false",
 		   "date":"Spring 2011",
 		   "endDate":"",

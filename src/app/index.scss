@@ -35,6 +35,7 @@ body{
    background-attachment: fixed;
    background-repeat: no-repeat;
    overflow-x:hidden;
+   overflow-y:auto;
    color: #cddada;
 
 
@@ -45,11 +46,7 @@ span{
 p{
    font-size: 1.2em;
 }
-.workDamnit{
-   z-index:2;
-   //margin-top:20%;
-   //position:absolute;
-}
+
 .myName{
    //font-family: 'Maven Pro', sans-serif;
    font-family: 'Architects Daughter', cursive;
@@ -72,13 +69,13 @@ p{
 
 .inner{
    overflow-y: auto;
-   overflow-x:hidden;
+   overflow-x: hidden;
    padding-top: 6%;
    background-image: linear-gradient(to top,#011621, #010E16);
    background-attachment: fixed;
    background-repeat: no-repeat;
+   min-height:100vh;
 }
-
 
 .thumbnail {
   height: 200px;
@@ -93,6 +90,7 @@ a{
    cursor:pointer;
 }
 
+
 a.md-button.md-raised, .md-button.md-raised{
    color: #010E16;
    background-color: #A6C9E3;
@@ -103,18 +101,11 @@ md-button.md-raised:focus, a.md-button.md-raised:focus{
    color: #010E16;
    background-color: #A6C9E3;
 }
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
 
   h1 {
     font-size: 3em;
   }
-}
+
 
 .techs {
   display: flex;
@@ -138,13 +129,13 @@ section.jumbotron {
 .myTitle, .honors, .footer, .togglers{
    font-style:italic;
    color: #70C9E3;
-}
+}/*
 .myTitle{
    margin-left:17%;
 }
 ul.xpDesc > li{
    margin-left:16%
-}
+}*/
 ul.xpDesc{
    margin-top: .5%;
    list-style-type: circle;
@@ -204,6 +195,26 @@ md-tabs md-ink-bar{
    color: #A6C9E3;
    background: #70C9E3 none repeat scroll 0% 0%;
 }*/
+//md-tab-item, md-tabs-wrapper, md-tab-data, md-tab, md-tabs-canvas{
+//      height:88vh;
+//}
+
+md-tab-item{
+   padding: .7%;
+}
+md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]){
+   color: #A6C9E3;
+}
+md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.md-active:not([disabled]){
+   color:#D5EAEF;
+   font-weight: bold;
+   text-shadow: 1px 2px 9px rgba(250, 255, 255, 1);
+}
+md-tabs-canvas{
+   //height:0;
+
+}
+
 .logoTop{
    margin-left:.5%;
 }
@@ -214,66 +225,107 @@ md-tabs md-ink-bar{
    font-style: italic;
 }
 
+.projects{
+   overflow-y:hidden;
+   color: #A6C9E3;
+}
 .project-sheet{
    border: 4px solid #A6C9E3;
    border-radius: 12px;
    position: relative;
    height:87vh;
-
+   overflow-y:auto;
+   color: #A6C9E3;
 }
 [role="tabpanel"],
 md-tabs {
 
 }
-
-@media(max-width:600px){
-   html{
-      font-size: .48em;
-   }
-   .myNameSm{
-      font-size:.7em;
-   }
-   .md-button{
-      font-size:.5em;
-   }
-   md-toolbar{
-      max-height: 25px;
-   }
-
-   .inner{
-      margin-top:40px;
-   }
+.skList{
+   white-space: nowrap;
 }
-@media(max-width:960px){
-   html{
-      font-size: .6em;
-   }
-   .md-button{
-      font-size:.5em;
-   }
-   .myNameSm{
-      font-size:.8em;
-   }
-   md-toolbar{
-      max-height: 25px;
-   }
-
-   .inner{
-      margin-top:40px;
-   }
-   .project-sheet{
-      margin-top:1vh;
-   }
+.nvLft, .nvRgt{
+   position:relative;
+   top: 45vh;
+   font-size:2em;
 }
-@media(min-width:960px){
+
+.nvLft{
+   left:1vh;
+}
+a.md-button.smallNav{
+   color:#D5EAEF;
+}
+@media(min-width:900px){
    .project-sheet{
-      margin-top:3vh;
+   //   margin-top:3vh;
+   height:84vh;
+   }
+   .nvRgt{
+      left:5vh;
+   }
+   .nvLft{
+      left:9vh;
+   }
+   md-tabs{
+      height:91vh;
+      top:-1vh;
    }
 }
 @media(min-width:1201px){
    .project-sheet{
-      margin-top:0;
+   //   margin-top:0;
    }
+   md-tabs{
+      height:91vh;
+      top:-4vh;
+   }
+}
+@media(max-width:900px){
+   html{
+      font-size: .7em;
+   }
+   .md-button{
+      font-size:.5em;
+   }
+   .myNameSm{
+      font-size:1.1em;
+   }
+   md-toolbar{
+      max-height: 5vh;
+   }
+
+   .inner{
+      margin-top:40px;
+   }
+   .project-sheet{
+   //   margin-top:1vh;
+      font-size: 1.5em;
+   }
+   md-tabs{
+      height:97vh;
+      top:-2vh;
+   }
+
+}
+@media(max-width:642px){
+   html{
+      font-size: .5em;
+   }
+   .myNameSm{
+      font-size:.67em;
+   }
+   .md-button{
+      font-size:.5em;
+   }
+   md-toolbar{
+      max-height: 5vh;
+   }
+
+   .inner{
+      margin-top:40px;
+   }
+
 }
 
 /*

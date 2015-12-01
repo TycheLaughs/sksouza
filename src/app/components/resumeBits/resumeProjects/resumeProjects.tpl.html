@@ -17,7 +17,7 @@
          </div>
          <div layout="column">
            <ul class="xpDesc">
-               <li  ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
+               <li  flex-offset="20" flex="50" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
                 {{desc}}
              </li>
             </ul>
@@ -43,7 +43,7 @@
              <div flex flex-offset-gt-sm="20" flex-offset-sm="10" class="myTitle"> {{pro.title}}</div>
          </div>
          <div layout="column">
-           <ul class="xpDesc">
+           <ul flex-offset="20" flex="50" class="xpDesc">
                <li ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
                 {{desc}}
              </li>
