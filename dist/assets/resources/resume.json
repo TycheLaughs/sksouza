@@ -10,6 +10,7 @@
       "EDUCATION":
          [
             {
+               "edId": 0,
                "degree":"Candidate for Bachelor of Science in Computer Science",
                "degreeDate":"Anticipated May 2016",
                "school":"University of Massachusetts Lowell",
@@ -21,6 +22,7 @@
                   ]
             },
             {
+               "edId": 1,
                "degree":"  Bachelor of Fine Arts in Interactive Design and Game Development",
                "degreeDate":"November 2011",
                "school":"Savannah College of Art and Design",
@@ -48,6 +50,8 @@
          "JSON",
          "Microsoft Office Suite",
          "Microsoft Visual Studio",
+         "SQL and MySQL",
+         "Twitter Bootstrap",
          "Unity3D",
          "Unreal Development Kit",
          "ZBrush"
@@ -55,7 +59,7 @@
       "EXPOSEDTO":[
          "Agile development",
          "Angular Material",
-         "Atom IDE",
+         "Blender",
          "C#",
          "Git",
          "Grunt",
@@ -66,21 +70,20 @@
          "JIRA",
          "MIPS",
          "MongoDB",
-         "MySQL",
          "Netbeans",
          "NodeJS",
          "Perl",
          "PHP",
          "Python",
-         "SQL",
+         "SFML",
          "SVN",
          "Three.js",
-         "Twitter Bootstrap",
          "XML"
       ],
       "XP":
          [
             {
+               "xId": 0,
                "employer":"Crescendo Content Marketing",
                "location":"Woburn, MA",
                "startDate":"July 2015",
@@ -91,6 +94,7 @@
                   ["Worked in Agile environment to increase unit test coverage across project front end by over 10%"]
             },
             {
+               "xId": 1,
                "employer":"Percussion Software",
                "location":"Woburn, MA",
                "startDate":"May 2015",
@@ -104,6 +108,7 @@
                   ]
             },
             {
+               "xId": 2,
                "employer":"University of Massachusetts Lowell",
                "location":"Lowell, MA",
                "startDate":"September 2014",
@@ -117,6 +122,7 @@
                   ]
             },
             {
+               "xId": 3,
                "employer":"University of Massachusetts Lowell",
                "location":"Lowell, MA",
                "startDate":"September 2014",
@@ -127,6 +133,7 @@
                   ["Reviewed code for correctness, for errors and against rubric; gave feedback"]
             },
             {
+               "xId": 4,
                "employer":"Canobie Lake Park",
                "location":"Salem, NH",
                "startDate":" August 2013",
@@ -137,6 +144,7 @@
                   ["Acted in haunt 'Virus'", "Applied horror makeup to other actors and self within allotted time"]
             },
             {
+               "xId": 5,
                "employer":"United Parcel Service",
                "location":"Nashua, NH",
                "startDate":"November 2012",
@@ -147,6 +155,7 @@
                   ["Ensured delivery of parcels from package car to doorstep in a timely, efficient and safe manner during peak season"]
             },
             {
+               "xId": 6,
                "employer":"Macy's Inc.",
                "location":"Salem, NH",
                "startDate":"November 2011",
@@ -162,6 +171,7 @@
       "PROJECTS":
          [
             {
+               "pId": 0,
                "projectTitle":"Dinner Wizard",
                "projectDesc":"Interactive Meal Suggestion App, AngularJS",
                "hasDateRange":"false",
@@ -173,6 +183,7 @@
                "showDefault":"true"
             },
             {
+               "pId": 1,
                "projectTitle":"Those Darn Dastardly Dragon Attacks!",
                "projectDesc":"Text-based Game in C++",
                "hasDateRange":"false",
@@ -184,6 +195,7 @@
                "showDefault":"true"
             },
             {
+               "pId": 2,
                "projectTitle":"Sira",
                "projectDesc":"First-Person Survival-Puzzler, vertical slice only, UDK",
                "hasDateRange":"true",
@@ -195,6 +207,7 @@
                "showDefault":"true"
             },
             {
+               "pId": 3,
                "projectTitle":"Autumn Falling",
                "projectDesc":"Directed Game Pre-visualization Project",
                "hasDateRange":"false",
@@ -206,6 +219,7 @@
                "showDefault":"true"
             },
             {
+               "pId": 4,
                "projectTitle":"Codex",
                "projectDesc":"2.5D Side-scrolling platformer, Unity3D",
                "hasDateRange":"false",
@@ -217,6 +231,7 @@
                "showDefault":"true"
             },
             {
+               "pId": 5,
                "projectTitle":"Fate Saga",
                "projectDesc":"Animation Trailer and Pilot by Dana Corrigan",
                "hasDateRange":"true",
@@ -228,6 +243,7 @@
                "showDefault":"false"
             },
             {
+               "pId": 6,
                "projectTitle":"Sight Unseen",
                "projectDesc":"Cthulu Live LARP supplement written by William Thrasher",
                "hasDateRange":"false",
@@ -239,6 +255,7 @@
                "showDefault":"false"
             },
             {
+               "pId": 7,
                "projectTitle":"Venyar",
                "projectDesc":"Homebrew Tabletop RPG",
                "hasDateRange":"true",
@@ -250,6 +267,7 @@
                "showDefault":"false"
             },
             {
+               "pId": 8,
                "projectTitle":"Global Incineration",
                "projectDesc":"Side-scrolling reverse Brick Break, UDK",
                "hasDateRange":"false",
@@ -264,6 +282,7 @@
       "VOLUNTEER":
          [
             {
+               "vId":0,
                "place":"MSPCA at Nevins Farm",
                "location":"Methuen, Massachusetts",
                "startDate":"August 2013",
@@ -272,6 +291,7 @@
                "other":""
             },
             {
+               "vId":1,
                "place":"Windham Nesmith Library",
                "location":"Windham, New Hampshire",
                "startDate":"July 2006",
