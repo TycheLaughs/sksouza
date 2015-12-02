@@ -3,7 +3,7 @@
    <div layout="row">
       <div  class="sectionHeading"flex-gt-sm="15" flex-sm="80" flex-offset="0">VOLUNTEER EXPERIENCE</div>
    </div>
-   <div ng-repeat="vol in volunteer track by $index" layout-margin>
+   <div ng-repeat="vol in volunteer track by vol.vId" layout-margin>
       <div layout="row">
          <div flex="55" flex-offset="15"class="titleRow">{{vol.place}} - {{vol.location}}</div>
          <div flex="30" flex-offset="5" class="titleRow">{{vol.startDate}}-{{vol.endDate}}</div>

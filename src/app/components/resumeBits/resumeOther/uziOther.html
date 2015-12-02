@@ -4,8 +4,10 @@
       <div class="sectionHeading"flex="10" hide-sm>OTHER SKILLS</div>
       <div flex="80" flex-offset="5">
          <span ng-repeat="o in other track by $index" >
-            {{o}}
-            <span  class="comma" ng-if="$index < other.length-1">,&nbsp;</span>
+            <span class="skList">
+               {{o}}
+               <span  class="comma" ng-if="$index < other.length-1">,&nbsp;</span>
+            </span>
          </span>
       </div>
    </div>

@@ -1,5 +1,5 @@
 <div layout-fill  class="education">
-   <div ng-repeat="ed in education track by $index" layout-margin>
+   <div ng-repeat="ed in education track by ed.edId" layout-margin>
 
       <div layout="row" hide-gt-sm ng-if="$index === 0" class="sectionHeading"flex="5">EDUCATION</div>
       <div layout="row" >

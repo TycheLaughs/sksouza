@@ -1,6 +1,7 @@
 {"PROJECTS":
    [
 		{
+         "pid":1,
 		   "projectTitle":"The 'Real' Excalibur",
 		   "projectDesc":["The ruler of this particular kingdom has died a rather sudden death, and, leaving no heirs, it is up to the archaic custom of appointing royalty to the one who wields the legendary artifact [insert name here]. Criers have been sent across the land to declare that he or she who arrives at the capital with said legendary artifact in hand three weeks hence will he named King (or Queen).", "tl;dr: Bring the most [beautiful, brilliant, badass, bloodthirsty] weapon to the funeral; win the kingdom.","This game is planned to be comprised mainly of a crafting system, with more details still under consideration."],
 		   "hasDateRange":"false",
@@ -14,6 +15,7 @@
 		   "images":[]
 		},
 		{
+         "pid":2,
 		   "projectTitle":"Dinner Wizard",
 		   "projectDesc":["Dinner Wizard is an interactive meal suggestion app utilizing AngularJS for learning purposes. It provides ingredient combinations with as many potential substitutions as possible for some generalized procedures as well as suggested ingredient ratios for those procedures. There are some tentative plans for massive revisions in the future to be able to provide a wider range of combinations and more intuitive searching and filtering features.","Version 1 was a 14-week (semester) long group project completed at UMass Lowell."],
 		   "hasDateRange":"false",
@@ -27,6 +29,7 @@
 		   "images":["https://dl.dropboxusercontent.com/u/9864080/dwCapture1.jpg","https://dl.dropboxusercontent.com/u/9864080/dwCapture2.jpg","https://dl.dropboxusercontent.com/u/9864080/dwCapture3.jpg","https://dl.dropboxusercontent.com/u/9864080/dwCapture4.jpg"]
 		},
 		{
+         "pid":3,
 		   "projectTitle":"Those Darn Dastardly Dragon Attacks!",
 		   "projectDesc":["Those Darn Dastardly Dragon Attacks! is a short, text-based castle defense game written in C++. Incorporating some fief and resource management, this turn-based game challenges players to outlast their neighbouring castles as a steadily increasing number of dragons begin to ravage the land."],
 		   "hasDateRange":"false",
@@ -40,6 +43,7 @@
 		   "images":[]
 		},
 		{
+         "pid":4,
 		   "projectTitle":"Codex",
 		   "projectDesc":["Codex is a 2.5D side-scrolling platformer built in Unity3D. The game follows Sir Quillford, a character in a silly storybook, as he strives to escape the pages of his book, which are, unfortunately, on fire.","This was a 10-week long group senior project completed at Savannah College of Art and Design."],
 		   "hasDateRange":"false",

@@ -3,7 +3,7 @@
    <div layout="row">
       <div class="sectionHeading" flex-gt-sm="15" flex-sm="50" flex-offset="0">PROJECT EXPERIENCE</div>
    </div>
-   <div ng-repeat="pro in projects track by $index" layout-margin ng-if="pro.showDefault=='true'">
+   <div ng-repeat="pro in projects track by pro.pId" layout-margin ng-if="pro.showDefault=='true'">
 
       <div layout="row">
          <div flex-gt-sm="55" flex-sm="70" flex-offset-gt-sm="15" flex-offset-sm="5" class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
@@ -30,7 +30,7 @@
          <a ng-click="toggleProj()" ng-if="toggleProjects">Hide More <i class="fa fa-angle-up"></i></a>
       </span>
    </div>
-   <div ng-repeat="pro in projects track by $index" layout-margin ng-if="pro.showDefault=='false' && toggleProjects">
+   <div ng-repeat="pro in projects track by pro.pId" layout-margin ng-if="pro.showDefault=='false' && toggleProjects">
 
       <div layout="row">
          <div flex="55" flex-offset="15"class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
