@@ -1,9 +1,13 @@
 <div layout-fill  class="exposedTo">
-<div layout="row" class="sectionHeading"flex="25" hide-gt-sm>EXPOSED TO</div>
-   <div layout="row" >
-      <div class="sectionHeading" flex="10" hide-sm>EXPOSED TO</div>
-      <div flex-gt-sm="55" flex-sm="80" flex-offset-gt-sm="5" flex-offset-sm="10">
-         <span ng-repeat="exp in exposed track by $index" >
+   <div layout="row" class="sectionHeading"flex="25" hide-gt-sm>
+      EXPOSED TO
+   </div>
+   <div layout="row">
+      <div class="sectionHeading" flex="10" hide-sm>
+         EXPOSED TO
+      </div>
+      <div flex-gt-sm="55" flex-offset-gt-sm="5" flex-sm="60" flex-offset-sm="10">
+         <span ng-repeat="exp in exposed track by $index">
             <span class="skList">
                {{exp}}
                <span  class="comma" ng-if="$index < exposed.length-1">,&nbsp;</span>

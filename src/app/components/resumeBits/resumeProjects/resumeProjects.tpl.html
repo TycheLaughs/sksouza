@@ -16,8 +16,8 @@
              <div flex flex-offset-gt-sm="20" flex-offset-sm="10" class="myTitle"> {{pro.title}}</div>
          </div>
          <div layout="column">
-           <ul class="xpDesc">
-               <li  flex-offset="20" flex="50" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
+           <ul class="xpDesc  fa-ul">
+               <li flex-offset="20" flex="50" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-li fa-circle"></i>
                 {{desc}}
              </li>
             </ul>
@@ -33,8 +33,8 @@
    <div ng-repeat="pro in projects track by pro.pId" layout-margin ng-if="pro.showDefault=='false' && toggleProjects">
 
       <div layout="row">
-         <div flex="55" flex-offset="15"class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
-         <div flex="30" flex-offset="5" class="titleRow">{{pro.date}}
+         <div flex-gt-sm="55" flex-sm="70" flex-offset-gt-sm="15" flex-offset-sm="5" class="titleRow">{{pro.projectTitle}}  ({{pro.projectDesc}})</div>
+         <div  flex flex-offset="5" class="titleRow">{{pro.date}}
             <span ng-if="pro.hasDateRange == 'true'">-{{pro.endDate}}</span>
          </div>
       </div>
@@ -43,8 +43,8 @@
              <div flex flex-offset-gt-sm="20" flex-offset-sm="10" class="myTitle"> {{pro.title}}</div>
          </div>
          <div layout="column">
-           <ul flex-offset="20" flex="50" class="xpDesc">
-               <li ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-circle"></i>
+           <ul class="xpDesc  fa-ul">
+               <li flex-offset="20" flex="50" ng-repeat="desc in pro.desc"  layout="row"><i class="fa fa-li fa-circle"></i>
                 {{desc}}
              </li>
             </ul>

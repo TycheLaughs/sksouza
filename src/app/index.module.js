@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('sksouza', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial']);
+    .module('sksouza', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial', 'ngFitText']);
 
 })();

@@ -27,45 +27,36 @@
     <![endif]-->
    <header ng-controller="indexCtrl">
 
-         <md-toolbar layout="row" layout-align="space-around center"><!-- -->
+         <md-toolbar layout="row" layout-align="space-around center" ng-class="{'wkPad': (((navigator.userAgent.indexOf('Chrome') != -1) || (navigator.userAgent.indexOf('Safari') != -1)) && (navigator.userAgent.indexOf('Firefox') != -1))}">
             <span hide-sm><img class="logoTop" src="assets/images/UziLogo01a.png"/></span>
             <span class="myName" hide-md hide-sm><h3>Susan Souza</h3></span>
             <span class="myName myNameSm" hide-gt-md><h3>Susan Souza</h3></span>
-
+            <span id="topNav" flex-shrink >
+            <!--
             <span id="topNav" flex-shrink hide-sm hide-md>
 
-           <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" >
-              Resume
-         </md-button>
-         <!--<md-button ui-sref="code"  ui-sref-active='md-raised' aria-label="Code">
-            Code
-         </md-button>-->
-         <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
-            Projects
-         </md-button>
-        <!-- <md-button   ui-sref="projects" ui-sref-active='md-raised'  aria-label="Writing" >
-            Writing
-         </md-button>-->
+               <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" >
+                  Resume
+               </md-button>
+
+               <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
+                  Projects
+               </md-button>
 
 
-     </span>
-     <span flex-shrink hide-gt-md>
+            </span>
+            <span flex-shrink hide-gt-md>
 
-    <md-button ui-sref="home" class="smallNav" aria-label="Resume" ng-if="state.current.name != 'home'">
-       Resume
-  </md-button>
-  <!--<md-button ui-sref="code"  ui-sref-active='md-raised' aria-label="Code">
-     Code
-  </md-button>-->
-  <md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
-     Projects
-  </md-button>
- <!-- <md-button   ui-sref="projects" ui-sref-active='md-raised'  aria-label="Writing" >
-     Writing
-  </md-button>-->
+               <md-button ui-sref="home" class="smallNav" aria-label="Resume" ng-if="state.current.name != 'home'">
+                  Resume
+               </md-button>
 
+               <md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
+                  Projects
+               </md-button>
+            -->
 
-</span>
+            </span>
 
 <!--
             <md-menu hide-gt-md >
@@ -89,6 +80,7 @@
       </header>
 
       <div ui-view></div>
+      <!--<md-toolbar class="stickyFoot"></md-toolbar>-->
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
