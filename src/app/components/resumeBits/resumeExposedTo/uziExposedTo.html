@@ -2,10 +2,10 @@
    <div layout="row" class="sectionHeading"flex="25">
       EXPOSED TO
    </div>
-   <div layout="row" layout-wrap flex-gt-sm="55" flex-offset-gt-sm="15" flex-sm="60" flex-offset-sm="10">
-      <div ng-repeat="exp in exposed track by $index" class="skList">
+   <div layout="row" flex-gt-sm="55" flex-offset-gt-sm="15" flex-sm="60" flex-offset-sm="10" layout-wrap>
+      <div ng-repeat="exp in exposed track by $index"  flex="nogrow" class="skList">
          {{exp}}
-         <span  class="comma" ng-if="$index < exposed.length-1">,</span>
+         <span  class="comma" ng-if="$index < exposed.length-1">,&nbsp;</span>
       </div>
    </div>
 </div>
