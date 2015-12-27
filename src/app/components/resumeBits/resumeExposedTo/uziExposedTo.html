@@ -1,18 +1,11 @@
 <div layout-fill  class="exposedTo">
-   <div layout="row" class="sectionHeading"flex="25" hide-gt-sm>
+   <div layout="row" class="sectionHeading"flex="25">
       EXPOSED TO
    </div>
-   <div layout="row">
-      <div class="sectionHeading" flex="10" hide-sm>
-         EXPOSED TO
-      </div>
-      <div flex-gt-sm="55" flex-offset-gt-sm="5" flex-sm="60" flex-offset-sm="10"  class="outerList">
-         <span ng-repeat="exp in exposed track by $index" class="outerList">
-            <span class="skList">
-               {{exp}}
-               <span  class="comma" ng-if="$index < exposed.length-1">,&nbsp;</span>
-            </span>
-         </span>
+   <div layout="row" layout-wrap flex-gt-sm="55" flex-offset-gt-sm="15" flex-sm="60" flex-offset-sm="10">
+      <div ng-repeat="exp in exposed track by $index" class="skList">
+         {{exp}}
+         <span  class="comma" ng-if="$index < exposed.length-1">,</span>
       </div>
    </div>
 </div>
