@@ -7,7 +7,7 @@
          TECHNICAL SKILLS &amp; SOFTWARE
       </div>
       <div flex-gt-sm="55" flex-sm="60" flex-offset-gt-sm="5" flex-offset-sm="10">
-         <span ng-repeat="skill in skills track by $index">
+         <span ng-repeat="skill in skills track by $index" class="outerList">
             <span class="skList">
                {{skill}}
                <span  class="comma" ng-if="$index < skills.length-1">,&nbsp;</span>
