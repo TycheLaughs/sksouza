@@ -14,10 +14,10 @@
                "degree":"Candidate for Bachelor of Science in Computer Science",
                "degreeDate":"Anticipated May 2016",
                "school":"University of Massachusetts Lowell",
-               "gpa":"3.58",
+               "gpa":"3.46",
                "honors":
                   [
-                     "Dean's List",
+                     "Dean's List 2013-15",
                      "Multiple Scholarships 2014-16"
                   ]
             },
@@ -39,19 +39,23 @@
          "Adobe Creative Suite 5",
          "After Effects",
          "AngularJS",
+         "Atom",
          "AutoCAD",
          "Autodesk Maya",
          "C",
          "C++",
          "CSS3",
+         "Git",
          "HTML5",
+         "HTML5 Canvas and SVG",
          "JavaScript",
-         "jQuery",
          "JSON",
          "Microsoft Office Suite",
          "Microsoft Visual Studio",
          "SQL and MySQL",
+         "TDD",
          "Twitter Bootstrap",
+         "Unit Tests with Karma and Jasmine",
          "Unity3D",
          "Unreal Development Kit",
          "ZBrush"
@@ -60,14 +64,16 @@
          "Agile development",
          "Angular Material",
          "Blender",
+         "Bower",
          "C#",
-         "Git",
+         "ES6",
          "Grunt",
          "Gulp",
-         "HTML5 Canvas and SVG",
          "IA32",
+         "Inkscape",
          "IntelliJ IDEA",
-         "JIRA",
+         "JIRA and Confluence",
+         "jQuery",
          "MIPS",
          "MongoDB",
          "Netbeans",
@@ -83,7 +89,7 @@
       "XP":
          [
             {
-               "xId": 0,
+               "xId": 1,
                "employer":"Crescendo Content Marketing",
                "location":"Woburn, MA",
                "startDate":"July 2015",
@@ -91,10 +97,13 @@
                "title":"Engineering Co-op (Intern)",
                "irrelevant":"false",
                "desc":
-                  ["Worked in Agile environment to increase unit test coverage across project front end by over 10%"]
+                  [
+                     "Worked in Agile environment to increase unit test coverage across project front end by over 10%".
+                     "Promoted and maintained code cleanliness and integrity across code-base"
+                  ]
             },
             {
-               "xId": 1,
+               "xId": 2,
                "employer":"Percussion Software",
                "location":"Woburn, MA",
                "startDate":"May 2015",
@@ -104,11 +113,12 @@
                "desc":
                   [
                      "Worked to bring skills to professional level and contributed to initial design of an internal administration tool",
-                     "Helped with the training for fellow interns in understanding of front-end development and programming skills"
+                     "Helped with the training for fellow interns in understanding of front-end development and programming skills",
+                     "Collaborated with fellow interns on several small, single-page applications for learning purposes"
                   ]
             },
             {
-               "xId": 2,
+               "xId": 0,
                "employer":"University of Massachusetts Lowell",
                "location":"Lowell, MA",
                "startDate":"September 2014",
@@ -117,8 +127,9 @@
                "irrelevant":"false",
                "desc":
                   [
-                     "Guide students to a better understanding of concepts covered in class",
-                     "Help students with debugging techniques, C and C++ syntax"
+                     "Guide students to a better understanding of concepts from class both through additional clarification and use of the Socratic teaching method",
+                     "Help students with debugging techniques, C and C++ syntax",
+                     "Work with students to break down problems into manageable chunks for better understanding"
                   ]
             },
             {
@@ -130,7 +141,9 @@
                "title":"Grader, Computer Science",
                "irrelevant":"false",
                "desc":
-                  ["Reviewed code for correctness, for errors and against rubric; gave feedback"]
+                  [
+                     "Reviewed code for correctness, for errors and against rubric; gave feedback"
+                  ]
             },
             {
                "xId": 4,
@@ -141,7 +154,10 @@
                "title":"Screeemfest Actor/Makeup Artist",
                "irrelevant":"true",
                "desc":
-                  ["Acted in haunt 'Virus'", "Applied horror makeup to other actors and self within allotted time"]
+                  [
+                     "Acted in haunt 'Virus'",
+                     "Applied horror makeup to actors and self within allotted time"
+                  ]
             },
             {
                "xId": 5,
@@ -152,7 +168,9 @@
                "title":"Seasonal Driver Helper",
                "irrelevant":"true",
                "desc":
-                  ["Ensured delivery of parcels from package car to doorstep in a timely, efficient and safe manner during peak season"]
+                  [
+                     "Ensured delivery of parcels from package car to doorstep in a timely, efficient and safe manner during peak season"
+                  ]
             },
             {
                "xId": 6,
@@ -163,7 +181,11 @@
                "title":"Seasonal Fragrance and Cosmetics Ringer",
                "irrelevant":"true",
                "desc":
-                  ["Rang up purchases", "Processed returns and Macy's Card payments", "Assisted with maintenance of displays and display cases"]
+                  [
+                     "Rang up purchases",
+                     "Processed returns and Macy's Card payments",
+                     "Assisted with maintenance of displays and display cases"
+                  ]
             }
 
          ]
@@ -179,7 +201,9 @@
                "endDate":"",
                "title":"Programmer/Designer/UI",
                "desc":
-                  ["Designed and implemented front end", "Provided all ingredient and combination data for back end", "Created task lists and schedule for semester; wrote project proposal, status reports and test documents"],
+                  ["Designed and implemented front end",
+                     "Provided all ingredient and combination data",
+                     "Created task lists and schedule for semester; wrote project proposal, status reports and test documents"],
                "showDefault":"true"
             },
             {
@@ -191,7 +215,9 @@
                "endDate":"",
                "title":"Programmer/Designer",
                "desc":
-                  ["Implemented entire castle defense game with room for more planned features"],
+                  [
+                     "Implemented castle defense and management game with room for more features"
+                  ],
                "showDefault":"true"
             },
             {
@@ -203,7 +229,9 @@
                "endDate":"Spring 2012",
                "title":"FX Artist",
                "desc":
-                  ["Created various real-time particle effects in UDK as per given specifications from main project team"],
+                  [
+                     "Created various real-time particle effects in UDK as per given specifications from main project team"
+                  ],
                "showDefault":"true"
             },
             {
@@ -215,7 +243,10 @@
                "endDate":"",
                "title":"Artist(2D)",
                "desc":
-                  ["Designed characters, creatures, environmental assets, items, UI and an interactive quest dialogue sequence", "Presented and delivered all finished concepts to art team and Project Director"],
+                  [
+                     "Designed characters, creatures, environmental assets, items, UI and an interactive quest dialogue sequence",
+                     "Presented and delivered all finished concepts to art team and Project Director"
+                  ],
                "showDefault":"true"
             },
             {
@@ -227,7 +258,11 @@
                "endDate":"",
                "title":"Writer/Designer/Artist/VFX",
                "desc":
-                  ["Team used Agile/SCRUM development methods successfully to monitor and increase productivity", "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic", "Designed and implemented paper-burning and other effects in Unity"],
+                  [
+                     "Team used Agile/SCRUM development methods successfully to monitor and increase productivity",
+                     "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic",
+                     "Designed and implemented paper-burning and other effects in Unity"
+                  ],
                "showDefault":"true"
             },
             {
@@ -239,7 +274,9 @@
                "endDate":"Spring 2011",
                "title":"Texture Artist",
                "desc":
-                  ["Painted textures for Crystalin Tavern interior and instructed other artists on project in UV mapping techniques"],
+                  [
+                     "Painted textures for Crystalin Tavern interior and instructed other artists on project in UV mapping techniques"
+                  ],
                "showDefault":"false"
             },
             {
@@ -251,7 +288,10 @@
                "endDate":"",
                "title":"GM/Coordinator/'Catcher'",
                "desc":
-                  ["Obtained the space from the school and worked with catchers to prepare the space and sensory materials", "Coordinated with actors and catchers in keeping the LARP participants from injury while blindfolded"],
+                  [
+                     "Obtained the space from the school and worked with catchers to prepare the space and sensory materials",
+                     "Coordinated with actors and catchers in keeping the LARP participants from injury while blindfolded"
+                  ],
                "showDefault":"false"
             },
             {
@@ -263,7 +303,11 @@
                "endDate":"Spring 2011",
                "title":"GM/Storyteller",
                "desc":
-                  ["Created world and multi-threaded narrative for the 2-year game", "Designed and implemented over forty characters in an evolving system", "Prepared materials and supplements for every weekly session"],
+                  [
+                     "Created world and multi-threaded narrative for the 2-year game",
+                     "Designed and implemented over forty characters in an evolving system",
+                     "Prepared materials and supplements for every weekly session"
+                  ],
                "showDefault":"false"
             },
             {
@@ -275,7 +319,10 @@
                "endDate":"",
                "title":"Artist",
                "desc":
-                  ["Created and implemented particle effects", "Summarized game's message for display prior to game credits "],
+                  [
+                     "Created and implemented particle effects",
+                     "Summarized game's message for display prior to game credits"
+                  ],
                "showDefault":"false"
             }
          ],
@@ -297,12 +344,12 @@
                "startDate":"July 2006",
                "endDate":"present",
                "title":"Library Volunteer, Re-circulation",
-               "other":"Murray Levin Volunteer of the Year Award received April 2015"
+               "other":"Received Murray Levin Volunteer of the Year Award April 2015"
             }
          ]
       ,
       "OTHERSKILLS":
-         ["Theatrical makeup design and application, cash register operation, some conversational French"]
+         ["Theatrical makeup design and application, some conversational French"]
 
   }
 }
