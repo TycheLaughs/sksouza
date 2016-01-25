@@ -79,7 +79,23 @@ h2{
    background-repeat: no-repeat;
    min-height:100vh;
 }
-
+.canv{
+   z-index:4;
+   cursor:pointer;
+}
+body > div > div > div.md-dialog-container.ng-scope > md-dialog{
+   background-color:#A6C9E3;
+   border: 4px solid #0E6791;
+   border-radius:9px;
+}
+md-dialog h2{
+   color: #0E6791;
+   font-weight:bold;
+   font-size: 4em;
+}
+body > div.ng-scope > div > div.md-dialog-container.ng-scope > md-dialog > div{
+   display:none;
+}
 .thumbnail {
   height: 200px;
 
@@ -108,7 +124,6 @@ md-button.md-raised:focus, a.md-button.md-raised:focus{
   h1 {
     font-size: 3em;
   }
-
 
 .techs {
   display: flex;
@@ -184,28 +199,17 @@ md-tabs-wrapper{
    background-color: #010E16;
 }*/
 
-md-toolbar:not(.md-menu-toolbar){
+md-toolbar.wkPad:not(.md-menu-toolbar){
    top:0;
    max-height: 5vh;
-   height:5vh;
+   height:11vh;
    min-height:3vh;
    position:fixed;
+   max-height: 20vh;
+   padding-top: 5vh;
    background-color: #010E16;//#020e21;//020321;
 }
-md-toolbar:not(.md-menu-toolbar).wkPad{
-   min-height:3vh;
-   height: 8vh;
-   max-height: 8vh;
-   padding-top:5vh;
-}
-/*
-md-tabs md-ink-bar{
-   color: #A6C9E3;
-   background: #70C9E3 none repeat scroll 0% 0%;
-}*/
-//md-tab-item, md-tabs-wrapper, md-tab-data, md-tab, md-tabs-canvas{
-//      height:88vh;
-//}
+
 
 md-tab-item{
    padding: .7%;
@@ -223,11 +227,6 @@ md-tabs-content-wrapper{
 
 }
 
-md-toolbar:not(.md-menu-toolbar).stickyFoot{
-   //position:fixed;
-   top:98vh;
-
-}
 .logoTop{
    margin-left:.5%;
 }
@@ -322,11 +321,17 @@ div.subtitle{
    .md-button{
       font-size:.5em;
    }
+   p {
+      font-size:1em;
+   }
+   .puzzleBtn{
+      font-size: 1.2em;
+   }
    .myNameSm{
       font-size:1.1em;
    }
-   md-toolbar{
-      max-height: 5vh;
+   md-toolbar.wkPad:not(.md-menu-toolbar){
+      max-height: 10vh;
    }
 
    .inner{
@@ -355,7 +360,7 @@ div.subtitle{
    .md-button{
       font-size:.5em;
    }
-   md-toolbar{
+   md-toolbar.wkPad:not(.md-menu-toolbar){
       max-height: 4vh;
    }
 
@@ -370,6 +375,9 @@ div.subtitle{
    md-tabs , md-pagination-wrapper{
       padding-top:.3vh;
       padding-bottom:.1vh;
+   }
+   .puzzleBtn{
+      font-size: 1.2em;
    }
 
 }
@@ -387,27 +395,6 @@ div.subtitle{
 }
 
 
-/*
-.window-holder {
-    border: 2px solid hotPink;
-    height: 450px;
-    position: relative;
-    width: 400px;
-    -moz-perspective: 1000px;
-    -moz-perspective-origin: 50% 0;
-}
-.window {
-    background-color: skyBlue;
-    height: 200px;
-    left: 50%;
-    margin: -100px;
-    position: absolute;
-    top: 50%;
-    width: 200px;
-    -moz-transform: rotateX(45deg);
-}
-
-*/
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

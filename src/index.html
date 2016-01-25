@@ -32,15 +32,18 @@
             <span class="myName" hide-md hide-sm><h3>Susan Souza</h3></span>
             <span class="myName myNameSm" hide-gt-md><h3>Susan Souza</h3></span>
             <span id="topNav" flex-shrink >
-            <!--
+
             <span id="topNav" flex-shrink hide-sm hide-md>
 
-               <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" >
+               <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume">
                   Resume
                </md-button>
 
-               <md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
+               <!--<md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
                   Projects
+               </md-button>-->
+               <md-button  ui-sref="tiles" ui-sref-active='md-raised'  aria-label="Tile Puzzles">
+                  Puzzles
                </md-button>
 
 
@@ -51,10 +54,13 @@
                   Resume
                </md-button>
 
-               <md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
+               <!--<md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
                   Projects
+               </md-button>-->
+               <md-button  ui-sref="tiles" class="smallNav" aria-label="Tile Puzzles"  ng-if="state.current.name != 'tiles'">
+                  Puzzles
                </md-button>
-            -->
+
 
             </span>
 

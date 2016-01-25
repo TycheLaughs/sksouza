@@ -13,6 +13,12 @@
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
+     })
+     .state('tiles', {
+        url: '/tiles',
+        templateUrl: 'app/tilePuzzles/tiles.html',
+        controller: 'tileCtrl',
+        controllerAs: 'tiles'
      });
       /*
       .state('projects', {
