@@ -66,6 +66,13 @@ h2{
 .myNameSm{
    margin-right: 25%;
 }
+.myLogo{
+   position:relative;
+   top:-1vh;
+   width:6vw;
+   height: 5vh;
+   fill: #70C9E3;
+}
 [layout=row] {
   flex-direction: row;
 }
@@ -201,12 +208,12 @@ md-tabs-wrapper{
 
 md-toolbar.wkPad:not(.md-menu-toolbar){
    top:0;
-   max-height: 5vh;
+   max-height: 6vh;
    height:11vh;
    min-height:3vh;
    position:fixed;
    max-height: 20vh;
-   padding-top: 5vh;
+   padding-top: 1vh;
    background-color: #010E16;//#020e21;//020321;
 }
 
@@ -331,7 +338,7 @@ div.subtitle{
       font-size:1.1em;
    }
    md-toolbar.wkPad:not(.md-menu-toolbar){
-      max-height: 10vh;
+      max-height: 6vh;
    }
 
    .inner{
