@@ -27,42 +27,40 @@
     <![endif]-->
    <header ng-controller="indexCtrl">
 
-         <md-toolbar layout="row" layout-align="space-around center" class="wkPad">
+         <md-toolbar layout="row" layout-align="space-around center" class="wkPad" flex-shrink >
             <!--<span hide-sm><img class="logoTop" src="assets/images/UziLogo01a.png"/></span>-->
-            <span><md-icon md-svg-src="assets/images/logo01.svg"  class="myLogo" aria-label="Susan Souza"></md-icon></span>
-            <span class="myName" hide-md hide-sm hide-xs><h3>Susan Souza</h3></span>
-            <span class="myName myNameSm" hide-gt-md><h3>Susan Souza</h3></span>
-            <span id="topNav" flex-shrink >
-
-            <span id="topNav" flex-shrink hide-sm hide-md>
-
+            <span><md-icon md-svg-src="assets/images/logo01.svg"  class="myLogo" aria-label="Susan Souza" hide-xs hide-sm></md-icon></span>
+            <span class="myName" hide-md hide-sm hide-xs flex-shrink><h3>Susan Souza</h3></span>
+            <span class="myName myNameSm" hide-gt-md flex-shrink><h3>Susan Souza</h3></span>
+            <span id="topNav" flex-shrink hide-sm hide-md hide-xs>
                <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" ng-show="!isSafari">
                   Resume
                </md-button>
-
+               <md-button ui-sref="folio" ui-sref-active='md-raised' aria-label="Portfolio"  ng-show="!isSafari">
+                  Examples
+               </md-button>
                <!--<md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
                   Projects
                </md-button>-->
                <md-button  ui-sref="tiles" ui-sref-active='md-raised'  aria-label="Tile Puzzles" ng-show="!isSafari">
                   Puzzles
                </md-button>
-
-
             </span>
-            <span flex-shrink hide-gt-md>
+            <span flex-shrink layout="row" hide-gt-md>
 
                <md-button ui-sref="home" class="smallNav" aria-label="Resume" ng-show="(state.current.name != 'home') && !isSafari">
                   Resume
                </md-button>
 
+               <md-button  ui-sref="folio" class="smallNav" aria-label="Portfolio"  ng-show="(state.current.name != 'folio') && !isSafari">
+                  Examples
+               </md-button>
                <!--<md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
                   Projects
                </md-button>-->
                <md-button  ui-sref="tiles" class="smallNav" aria-label="Tile Puzzles"  ng-show="(state.current.name != 'tiles') && !isSafari">
                   Puzzles
                </md-button>
-
-
             </span>
 
 <!--

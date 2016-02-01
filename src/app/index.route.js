@@ -14,6 +14,12 @@
         controller: 'MainController',
         controllerAs: 'main'
      })
+     .state('folio', {
+        url: '/folio',
+        templateUrl: 'app/folio/folio.html',
+        controller: 'FolioController',
+        controllerAs: 'folio'
+     })
      .state('tiles', {
         url: '/tiles',
         templateUrl: 'app/tilePuzzles/tiles.html',

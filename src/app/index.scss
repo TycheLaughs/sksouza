@@ -64,7 +64,9 @@ h2{
    margin-top:.125em;
 }
 .myNameSm{
-   margin-right: 25%;
+   margin-right: 3vw;
+   margin-top: 1.5vh;
+   padding-top: 1vh;
 }
 .myLogo{
    position:relative;
@@ -162,6 +164,19 @@ md-button.md-raised:focus, a.md-button.md-raised:focus{
 ul.xpDesc > li{
    margin-left:16%
 }*/
+.smaller{
+   font-size:.9em;
+}
+p.smaller{
+   margin-top:0;
+   margin-bottom:.2em;
+}
+ul.folio{
+   list-style-type:none;
+}
+.folio a{
+   font-weight:bold;
+}
 ul.xpDesc{
    margin-top: .5%;
    list-style-type: circle;
