@@ -25,6 +25,12 @@
         templateUrl: 'app/tilePuzzles/tiles.html',
         controller: 'tileCtrl',
         controllerAs: 'tiles'
+     })
+     .state('editor', {
+       url: '/editor',
+       templateUrl: 'app/editor/tileEditor.html',
+       controller: 'EditorController',
+       controllerAs: 'editor'
      });
       /*
       .state('projects', {

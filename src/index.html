@@ -29,9 +29,9 @@
 
          <md-toolbar layout="row" layout-align="space-around center" class="wkPad" flex-shrink >
             <!--<span hide-sm><img class="logoTop" src="assets/images/UziLogo01a.png"/></span>-->
-            <span><md-icon md-svg-src="assets/images/logo01.svg"  class="myLogo" aria-label="Susan Souza" hide-xs hide-sm></md-icon></span>
-            <span class="myName" hide-md hide-sm hide-xs flex-shrink><h3>Susan Souza</h3></span>
-            <span class="myName myNameSm" hide-gt-md flex-shrink><h3>Susan Souza</h3></span>
+            <span ui-sref="home"><md-icon md-svg-src="assets/images/logo01.svg"  class="myLogo" aria-label="Susan Souza" hide-xs hide-sm></md-icon></span>
+            <span ui-sref="home" class="myName" hide-md hide-sm hide-xs flex-shrink><h3>Susan Souza</h3></span>
+            <span ui-sref="home" class="myName myNameSm" hide-gt-md flex-shrink><h3>Susan Souza</h3></span>
             <span id="topNav" flex-shrink hide-sm hide-md hide-xs>
                <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" ng-show="!isSafari">
                   Resume
