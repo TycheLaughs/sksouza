@@ -11,11 +11,11 @@
          <p class="md-body-3">Select all tiles in one continuous path via click or tap without crossing your path again or using diagonals.</p>
          <!--<p class="md-body-3">Numbered tiles must be seleced in the order they numerically appear.</p>-->
       </div>
-      <md-button class="md-raised puzzleBtn" aria-label="Next" ng-click="redraw()" ng-show="puzzleIndex < 4">
+      <md-button class="md-raised puzzleBtn" aria-label="Next" ng-click="redraw()" ng-show="puzzleIndex < puzzleData.length-1">
          Next
       </md-button>
       <div>
-         <p class="md-body-3" ng-show="puzzleIndex === 4 && wonRound">Check back soon for more puzzles!</p>
+         <p class="md-body-3" ng-show="puzzleIndex === puzzleData.length-1 && wonRound">Check back soon for more puzzles!</p>
       </div>
    </div>
 </div>
