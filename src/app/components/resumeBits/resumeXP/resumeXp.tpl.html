@@ -32,7 +32,7 @@
    <div ng-repeat="x in xp track by  x.xId" layout-margin ng-if="x.irrelevant == 'true' && toggleXP">
 
       <div layout="row">
-         <div flex="55" flex-offset="15"class="titleRow">{{x.employer}} - {{x.location}}</div>
+         <div flex-gt-sm="55" flex-sm="65" flex-offset-gt-sm="15" flex-offset-sm="10" class="titleRow">{{x.employer}} - {{x.location}}</div>
          <div flex flex-offset-gt-sm="10" flex-offset-sm="5"class="titleRow">{{x.startDate}}-{{x.endDate}}</div>
       </div>
       <div layout="column">
@@ -40,7 +40,7 @@
              <div flex  flex-offset="20" class="myTitle"> {{x.title}}</div>
          </div>
          <div layout="column">
-           <ul  class="xpDesc fa-ul">
+           <ul class="xpDesc fa-ul">
                <li flex-offset="20" flex="50" ng-repeat="y in x.desc"  layout="row"><i class="fa fa-li fa-circle"></i>
                 {{y}}
              </li>

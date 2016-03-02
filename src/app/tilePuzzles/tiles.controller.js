@@ -240,9 +240,6 @@
             $scope.clearCanv();
             $scope.draw();
          }
-         else{
-            $scope.showDeny();
-         }
       };
 
       /*clearCanv clears the canvas */
@@ -274,6 +271,9 @@
             console.log("Puzzle Complete!");
             $scope.wonRound = true;
             $scope.showAlert(e);
+         }
+         if($scope.wonRound && $scope.puzzleIndex !== $scope.puzzleData.length-1){
+            $scope.redraw();
          }
       });
 

@@ -24,7 +24,7 @@
 **/
 html {
    font-family: 'Roboto Slab', serif;
-   font-size: .8em;
+   font-size: .95em;
    background-image: linear-gradient(to top,#011621, #010E16);
    background-attachment: fixed;
    background-repeat: no-repeat;
@@ -86,11 +86,14 @@ h2{
    background-image: linear-gradient(to top,#011621, #010E16);
    background-attachment: fixed;
    background-repeat: no-repeat;
-   min-height:100vh;
+
 }
 .canv{
    z-index:4;
    cursor:pointer;
+}
+.puzz{
+   height: 90vh;
 }
 md-list-item{
    min-height: 1.1em;
@@ -212,6 +215,7 @@ ul.xpDesc{
 .resume{
    margin-top: 1.5%;
    color: #A6C9E3;
+   min-height:100vh;
 }
 .resumeFoot{
    font-style:italic;
@@ -392,13 +396,13 @@ div.subtitle{
 
 @media(max-width:642px){
    html{
-      font-size: .5em;
+      font-size: .6em;
    }
    .myNameSm{
       font-size:.67em;
    }
    .md-button{
-      font-size:.5em;
+      font-size:.6em;
    }
    md-toolbar.wkPad:not(.md-menu-toolbar){
       max-height: 4vh;
