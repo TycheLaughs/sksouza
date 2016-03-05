@@ -4,7 +4,8 @@
          {
             "email":"sksouza.art@gmail.com",
             "gitHub":"github.com/TycheLaughs",
-            "website":"tychelaughs.github.io/sksouza"
+            "website":"tychelaughs.github.io/sksouza",
+            "linkedin":"linkedin.com/in/uzisusansouza"
          }
       ,
       "EDUCATION":
@@ -35,31 +36,41 @@
             }
          ]
       ,
-      "SKILLS":[
-         "Adobe Creative Suite 5",
-         "After Effects",
-         "AngularJS",
-         "Atom",
-         "AutoCAD",
-         "Autodesk Maya",
-         "C",
-         "C++",
-         "CSS3",
-         "Git",
-         "HTML5",
-         "HTML5 Canvas and SVG",
-         "JavaScript",
-         "JSON",
-         "Microsoft Office Suite",
-         "Microsoft Visual Studio",
-         "SQL and MySQL",
-         "TDD",
-         "Twitter Bootstrap",
-         "Unit Tests with Karma and Jasmine",
-         "Unity3D",
-         "Unreal Development Kit",
-         "ZBrush"
-      ],
+      "SKILLS":{
+         "LANG": [
+            "Angular Material",
+            "AngularJS",
+            "C",
+            "C++",
+            "CSS3",
+            "HTML5 Canvas and SVG",
+            "HTML5",
+            "JavaScript",
+            "jQuery",
+            "JSON",
+            "MySQL",
+            "SQL",
+            "Three.js",
+            "Twitter Bootstrap",
+            "Unit Tests with Karma & Jasmine",
+            "XML"
+         ],
+         "TOOLS":[
+            "Adobe Creative Suite 5",
+            "After Effects",
+            "Atom",
+            "Autodesk Maya",
+            "Bower and NPM",
+            "Git",
+            "Inkscape",
+            "IntelliJ IDEA",
+            "Microsoft Office Suite",
+            "Microsoft Visual Studio",
+            "Unity3D",
+            "Unreal Engine 3",
+            "ZBrush"
+]
+      },
       "EXPOSEDTO":[
          "Agile development",
          "Angular Material",
@@ -70,10 +81,7 @@
          "Grunt",
          "Gulp",
          "IA32",
-         "Inkscape",
-         "IntelliJ IDEA",
          "JIRA and Confluence",
-         "jQuery",
          "MIPS",
          "MongoDB",
          "Netbeans",
@@ -82,9 +90,7 @@
          "PHP",
          "Python",
          "SFML",
-         "SVN",
-         "Three.js",
-         "XML"
+         "SVN"
       ],
       "XP":
          [

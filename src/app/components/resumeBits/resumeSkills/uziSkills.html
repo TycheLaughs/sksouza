@@ -1,11 +1,20 @@
 <div layout-fill  class="skills">
    <div layout="row" class="sectionHeading" flex="90">
-      TECHNICAL SKILLS &amp; SOFTWARE
+      LANGUAGES, LIBRARIES &amp; FRAMEWORKS
    </div>
    <div layout="row" flex-gt-sm="55" flex-sm="60" flex-offset-gt-sm="15" flex-offset-sm="10" layout-wrap>
-      <div ng-repeat="skill in skills track by $index" class="skList">
+      <div ng-repeat="skill in skills.LANG track by $index" class="skList">
          {{skill}}
-         <span  class="comma" ng-if="$index < skills.length-1">, &nbsp;</span>
+         <span  class="comma" ng-if="$index < skills.LANG.length-1">, &nbsp;</span>
+      </div>
+   </div>
+   <div layout="row" class="sectionHeading" flex="90">
+      TOOLS &amp; SOFTWARE
+   </div>
+   <div layout="row" flex-gt-sm="55" flex-sm="60" flex-offset-gt-sm="15" flex-offset-sm="10" layout-wrap>
+      <div ng-repeat="skill in skills.TOOLS track by $index" class="skList">
+         {{skill}}
+         <span  class="comma" ng-if="$index < skills.TOOLS.length-1">, &nbsp;</span>
       </div>
    </div>
 </div>

@@ -1,7 +1,7 @@
 
 <div layout-fill  class="resumeVolunteer">
    <div layout="row">
-      <div  class="sectionHeading"flex-gt-sm="15" flex-sm="80" flex-offset="0">VOLUNTEER EXPERIENCE</div>
+      <div  class="sectionHeading"flex="90">VOLUNTEER EXPERIENCE</div>
    </div>
    <div ng-repeat="vol in volunteer track by vol.vId" layout-margin>
       <div layout="row">
@@ -12,8 +12,8 @@
          <div layout="row">
              <div flex flex-offset="20" class="myTitle"> {{vol.title}}</div>
          </div>
-         <div layout="column"  class="other"  flex-offset="15">
-            {{vol.other}}
+         <div layout="column"  class="other"  flex-offset="20" ng-if="vol.other.length">
+            <span><i class="fa fa-circle"></i>{{vol.other}}</span>
          </div>
       </div>
    </div>
