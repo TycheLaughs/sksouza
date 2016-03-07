@@ -79,10 +79,7 @@
             $scope.coordTile = {"x": "", "y": ""};
             for(i = 0; i < $scope.xPoints.length; i++){
                $scope.noFill = true;
-               if((x > $scope.xPoints[i])&& (x < ($scope.xPoints[i] + $scope.squareSize))){
-                  console.log("got match on x");
-                  if((y > $scope.yPoints[i]) && (y < ($scope.yPoints[i] + $scope.squareSize))){
-                     console.log("got match on y");
+               if((x > $scope.xPoints[i])&& (x < ($scope.xPoints[i] + $scope.squareSize)) && (y > $scope.yPoints[i]) && (y < ($scope.yPoints[i] + $scope.squareSize))){
                      $scope.coordTile.x = $scope.xPoints[i];
                      $scope.coordTile.y = $scope.yPoints[i];
                      if($scope.tiles.length === 0){
@@ -94,21 +91,21 @@
                      }
                      else{
                         for(j = 0; j < $scope.tiles.length; j++){
-                           if($scope.xPoints[i] === $scope.tiles[j].x && $scope.yPoints[i] === $scope.tiles[j].y){
+                           if($scope.coordTile.x === $scope.tiles[j].x && $scope.coordTile.y === $scope.tiles[j].y){
                               //console.log("tiles not empty: should be filling green");
                               $scope.tiles.splice(j, 1);
                               context.fillStyle = $scope.inactive;
                               context.strokeStyle = $scope.normal;
                               $scope.noFill = false;
                            }
-                           else{
-                              //console.log("tiles not empty: should be filling purple");
-                              //context.clearRect(xPoints[i], yPoints[j], squareSize, squareSize);
-                              $scope.tiles.push($scope.coordTile);
-                              context.fillStyle = $scope.active;
-                              context.strokeStyle = $scope.movingStroke;
-                              $scope.noFill = false;
-                           }
+                        }
+                        if($scope.noFill){
+                           //console.log("tiles not empty: should be filling purple");
+                           //context.clearRect(xPoints[i], yPoints[j], squareSize, squareSize);
+                           $scope.tiles.push($scope.coordTile);
+                           context.fillStyle = $scope.active;
+                           context.strokeStyle = $scope.movingStroke;
+                           $scope.noFill = false;
                         }
                      }
                      context.fillRect($scope.xPoints[i], $scope.yPoints[i], $scope.squareSize, $scope.squareSize);
@@ -116,7 +113,6 @@
                      context.fill();
                      context.stroke();
                      console.log(JSON.stringify($scope.tiles));
-                  }
                }
             }
          };
