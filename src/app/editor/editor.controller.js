@@ -93,7 +93,7 @@
                         $scope.noFill = false;
                      }
                      else{
-                        for(j = 0; j < $scope.tiles.length && $scope.noFill; j++){
+                        for(j = 0; j < $scope.tiles.length; j++){
                            if($scope.xPoints[i] === $scope.tiles[j].x && $scope.yPoints[i] === $scope.tiles[j].y){
                               //console.log("tiles not empty: should be filling green");
                               $scope.tiles.splice(j, 1);
