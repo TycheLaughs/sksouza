@@ -75,6 +75,12 @@ h2{
    height: 5vh;
    fill: #70C9E3;
 }
+.pdfIcon{
+   //position: relative;
+   top: -3vh;
+   min-width: 8vw;
+   height: 10vh;
+}
 [layout=row] {
   flex-direction: row;
 }

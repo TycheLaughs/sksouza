@@ -69,7 +69,7 @@
             "Unity3D",
             "Unreal Engine 3",
             "ZBrush"
-]
+            ]
       },
       "EXPOSEDTO":[
          "Agile development",
@@ -200,6 +200,39 @@
          [
             {
                "pId": 0,
+               "projectTitle":"ASL-to-text",
+               "projectDesc":"ASL alphabet transcriber using the LeapMotion and Python",
+               "hasDateRange":"false",
+               "date":"Spring 2016",
+               "endDate":"",
+               "title":"Programmer",
+               "desc":
+                  [
+                     "Worked with group to construct methods for gathering sign data from the Leap API",
+                     "Streamlined data collection process for datasets used for a machine learning algortithm",
+                     "Prevented display of an abundance of pre-emptive matches so as to show potentially more accurate results",
+                     "Set method for inserting whitespace delimiters on natural pauses between potential words",
+                     "Structured app using MVC design pattern and maintained overall project file structure"
+                  ],
+               "showDefault":"true"
+            },
+            {
+               "pId": 1,
+               "projectTitle":"Tiles",
+               "projectDesc":"Little tile puzzles on my website with HTML5 Canvas",
+               "hasDateRange":"false",
+               "date":"January 2016",
+               "endDate":"",
+               "title":"Programmer/Designer",
+               "desc":
+                  [
+                     "Designed and implemented puzzle game",
+                     "Created an editor for further puzzle creations"
+                  ],
+               "showDefault":"true"
+            },
+            {
+               "pId": 2,
                "projectTitle":"Dinner Wizard",
                "projectDesc":"Interactive Meal Suggestion App, AngularJS",
                "hasDateRange":"false",
@@ -213,7 +246,7 @@
                "showDefault":"true"
             },
             {
-               "pId": 1,
+               "pId": 3,
                "projectTitle":"Those Darn Dastardly Dragon Attacks!",
                "projectDesc":"Text-based Game in C++",
                "hasDateRange":"false",
@@ -227,7 +260,7 @@
                "showDefault":"true"
             },
             {
-               "pId": 2,
+               "pId": 4,
                "projectTitle":"Sira",
                "projectDesc":"First-Person Survival-Puzzler, vertical slice only, UDK",
                "hasDateRange":"true",
@@ -241,7 +274,7 @@
                "showDefault":"true"
             },
             {
-               "pId": 3,
+               "pId": 5,
                "projectTitle":"Autumn Falling",
                "projectDesc":"Directed Game Pre-visualization Project",
                "hasDateRange":"false",
@@ -253,10 +286,10 @@
                      "Designed characters, creatures, environmental assets, items, UI and an interactive quest dialogue sequence",
                      "Presented and delivered all finished concepts to art team and Project Director"
                   ],
-               "showDefault":"true"
+               "showDefault":"false"
             },
             {
-               "pId": 4,
+               "pId": 6,
                "projectTitle":"Codex",
                "projectDesc":"2.5D Side-scrolling platformer, Unity3D",
                "hasDateRange":"false",
@@ -269,10 +302,10 @@
                      "Developed the two narratives, font for manuscript, character concepts and initial 'glide' mechanic",
                      "Designed and implemented paper-burning and other effects in Unity"
                   ],
-               "showDefault":"true"
+               "showDefault":"false"
             },
             {
-               "pId": 5,
+               "pId": 7,
                "projectTitle":"Fate Saga",
                "projectDesc":"Animation Trailer and Pilot by Dana Corrigan",
                "hasDateRange":"true",
@@ -286,7 +319,7 @@
                "showDefault":"false"
             },
             {
-               "pId": 6,
+               "pId": 8,
                "projectTitle":"Sight Unseen",
                "projectDesc":"Cthulu Live LARP supplement written by William Thrasher",
                "hasDateRange":"false",
@@ -301,7 +334,7 @@
                "showDefault":"false"
             },
             {
-               "pId": 7,
+               "pId": 9,
                "projectTitle":"Venyar",
                "projectDesc":"Homebrew Tabletop RPG",
                "hasDateRange":"true",
@@ -317,7 +350,7 @@
                "showDefault":"false"
             },
             {
-               "pId": 8,
+               "pId": 10,
                "projectTitle":"Global Incineration",
                "projectDesc":"Side-scrolling reverse Brick Break, UDK",
                "hasDateRange":"false",
