@@ -7,7 +7,7 @@
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/resumeBits/resumeHeader/resumeHead.tpl.html',
-      controller: 'resumeCtrl'
+      //controller: 'resumeCtrl'
 
       };
     return directive;

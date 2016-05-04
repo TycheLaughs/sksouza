@@ -7,7 +7,7 @@
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/resumeBits/resumeExposedTo/uziExposedTo.html',
-      controller:'resumeCtrl'
+      //controller:'resumeCtrl'
 
       };
     return directive;
