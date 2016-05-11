@@ -73,8 +73,8 @@
    			$scope.xPoints.push($scope.tiles[i].x);
    			$scope.yPoints.push($scope.tiles[i].y);
    		}
-         console.log("~Drawing puzzle~");
-         console.log("There are " + $scope.tiles.length + " tiles in this puzzle.");
+         //console.log("~Drawing puzzle~");
+         //console.log("There are " + $scope.tiles.length + " tiles in this puzzle.");
          $scope.context.fillStyle = $scope.baseColor;
       	$scope.context.strokeStyle = "black";
 
@@ -91,9 +91,9 @@
          paints that square if a valid selection.
       */
       function checkCursor(x, y){
-          var l = {"x":"", "y":""};
-      	l.x = $scope.curr.x; //store previous values
-      	l.y = $scope.curr.y;
+         var lastSelected = {"x":"", "y":""};
+         lastSelected.x = $scope.curr.x; //store previous values
+         lastSelected.y = $scope.curr.y;
          ////console.log(x + ", " + y);
       	for(i = 0; i < $scope.xPoints.length; i++){
       		if(x > $scope.xPoints[i] && x < ($scope.xPoints[i] + $scope.squareSize)){
@@ -103,27 +103,27 @@
       					$scope.curr.x = $scope.xPoints[i]; //find current values
       					$scope.curr.y = $scope.yPoints[i];
 
-      					if(l.x !== ""){ //if we've encountered any tile before
+      					if( lastSelected.x !== ""){ //if we've encountered any tile before
                      //diagonals are forbidden; squares must also be neighbors of currently selected square
-      						if(isNotDiagonal($scope.curr, l, $scope.squareSize) && isAdjacent($scope.curr, l, $scope.squareSize)){
+      						if(isNotDiagonal($scope.curr, lastSelected, $scope.squareSize) && isAdjacent($scope.curr, lastSelected, $scope.squareSize)){
                            //if this is the second tile we're selecting, put the one we previously selected onto visited
       							if($scope.visited.length === 0){
-      								$scope.visited.push(l);
-      								$scope.visited[0].x = l.x;
-      								$scope.visited[0].y = l.y;
+      								$scope.visited.push( lastSelected);
+      								$scope.visited[0].x = lastSelected.x;
+      								$scope.visited[0].y = lastSelected.y;
       							}
       							else{
       								//did we visit  the previously-selected tile before?
       								for(j = 0; j < $scope.visited.length; j++){
-      									if($scope.visited[j].x === l.x && $scope.visited[j].y === l.y){
+      									if($scope.visited[j].x === lastSelected.x && $scope.visited[j].y === lastSelected.y){
       										k = j;
-                                    console.log("tile already in visited array");
+                                    //console.log("tile already in visited array");
       									}
       								}
       								if(k < 0){ //if we haven't visited the previously-selected tile before, push it to visited
-      									$scope.visited.push(l);
-      									//$scope.visited[$scope.visited.length-1].x = l.x;
-      									//$scope.visited[$scope.visited.length-1].y = l.y;
+      									$scope.visited.push( lastSelected);
+      									//$scope.visited[$scope.visited.length-1].x = lastSelected.x;
+      									//$scope.visited[$scope.visited.length-1].y = lastSelected.y;
                                  k = -1;
 
       								}
@@ -140,13 +140,14 @@
       								//set selected back to what it was.
       						else{
                            //otherwise, this click was in an invalid spot, so reset the selection to the previous
-      							$scope.curr.x = l.x;
-      							$scope.curr.y = l.y;
+      							$scope.curr.x = lastSelected.x;
+      							$scope.curr.y = lastSelected.y;
       						}
       					}
       					else{
       						//remember that selected is xPoints[i], yPoints[i] here:
                         //paint selection
+                        $scope.visited.push($scope.curr);
       						$scope.context.fillStyle = $scope.activeColor;
       						$scope.context.fillRect($scope.xPoints[i], $scope.yPoints[i], $scope.squareSize, $scope.squareSize);
       						$scope.context.fill();
@@ -158,7 +159,9 @@
       			}
       		}
       	}
-
+         //console.log("current: " + JSON.stringify($scope.curr));
+         //console.log("previous: " + JSON.stringify(lastSelected));
+         //console.log("visited: " + JSON.stringify($scope.visited));
       }
       /*
          checks if the new tile is diagonal to the old selection.
@@ -190,7 +193,7 @@
       */
       $scope.clearPuzzle = function(){
 
-         console.log("Clearing puzzle");
+         //console.log("Clearing puzzle");
          $scope.clearCanv();
          while($scope.visited.length > 0){
             $scope.visited.pop();
@@ -266,9 +269,9 @@
          $scope.mouseX = Number(e.pageX - this.offsetLeft);
          $scope.mouseY = Number(e.pageY - this.offsetTop);
          checkCursor($scope.mouseX, $scope.mouseY);
-         console.log($scope.visited.length);
-         if($scope.visited.length === ($scope.tiles.length - 1)){
-            console.log("Puzzle Complete!");
+         //console.log($scope.visited.length);
+         if($scope.visited.length === ($scope.tiles.length)){
+            //console.log("Puzzle Complete!");
             $scope.wonRound = true;
             $scope.showAlert(e);
          }

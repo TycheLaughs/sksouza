@@ -5,20 +5,21 @@
             "email":"sksouza.art@gmail.com",
             "gitHub":"github.com/TycheLaughs",
             "website":"tychelaughs.github.io/sksouza",
-            "linkedin":"linkedin.com/in/uzisusansouza"
+            "linkedin":"linkedin.com/in/uzisusansouza",
+            "download":"assets/resources/uSouza_resume.pdf"
          }
       ,
       "EDUCATION":
          [
             {
                "edId": 0,
-               "degree":"Candidate for Bachelor of Science in Computer Science",
-               "degreeDate":"Anticipated May 2016",
+               "degree":"Bachelor of Science in Computer Science",
+               "degreeDate":"May 2016",
                "school":"University of Massachusetts Lowell",
                "gpa":"3.46",
                "honors":
                   [
-                     "Dean's List 2013-15",
+                     "Dean's List Fall 2013, Spring 2014, 2015 & 2016",
                      "Multiple Scholarships 2014-16"
                   ]
             },
@@ -49,6 +50,7 @@
             "jQuery",
             "JSON",
             "MySQL",
+            "Python",
             "SQL",
             "Three.js",
             "Twitter Bootstrap",
@@ -78,6 +80,7 @@
          "Bower",
          "C#",
          "ES6",
+         "Flask",
          "Grunt",
          "Gulp",
          "IA32",
@@ -88,12 +91,26 @@
          "NodeJS",
          "Perl",
          "PHP",
-         "Python",
          "SFML",
          "SVN"
       ],
       "XP":
          [
+            {
+               "xId": 0,
+               "employer":"University of Massachusetts Lowell",
+               "location":"Lowell, MA",
+               "startDate":"September 2014",
+               "endDate":"present",
+               "title":"Peer Tutor, Computer Science",
+               "irrelevant":"false",
+               "desc":
+                  [
+                     "Guide students to a better understanding of concepts from class both through additional clarification and use of the Socratic teaching method",
+                     "Help students with debugging techniques, C and C++ syntax",
+                     "Work with students to break down problems into manageable chunks for better understanding"
+                  ]
+            },
             {
                "xId": 1,
                "employer":"Crescendo Content Marketing",
@@ -123,21 +140,7 @@
                      "Collaborated with fellow interns on several small, single-page applications for learning purposes"
                   ]
             },
-            {
-               "xId": 0,
-               "employer":"University of Massachusetts Lowell",
-               "location":"Lowell, MA",
-               "startDate":"September 2014",
-               "endDate":"present",
-               "title":"Peer Tutor, Computer Science",
-               "irrelevant":"false",
-               "desc":
-                  [
-                     "Guide students to a better understanding of concepts from class both through additional clarification and use of the Socratic teaching method",
-                     "Help students with debugging techniques, C and C++ syntax",
-                     "Work with students to break down problems into manageable chunks for better understanding"
-                  ]
-            },
+
             {
                "xId": 3,
                "employer":"University of Massachusetts Lowell",
@@ -208,8 +211,8 @@
                "title":"Programmer",
                "desc":
                   [
-                     "Worked with group to construct methods for gathering sign data from the Leap API",
-                     "Streamlined data collection process for datasets used for a machine learning algortithm",
+                     "Worked with group to construct methods for gathering sign data and determining which data to use from the Leap API",
+                     "Streamlined data collection process for datasets used for a machine learning algorithm",
                      "Prevented display of an abundance of pre-emptive matches so as to show potentially more accurate results",
                      "Set method for inserting whitespace delimiters on natural pauses between potential words",
                      "Structured app using MVC design pattern and maintained overall project file structure"
@@ -369,24 +372,24 @@
          [
             {
                "vId":0,
-               "place":"MSPCA at Nevins Farm",
-               "location":"Methuen, Massachusetts",
-               "startDate":"August 2013",
-               "endDate":"May 2015",
-               "title":"Volunteer, Cat Caretaker",
-               "other":""
-            },
-            {
-               "vId":1,
                "place":"Windham Nesmith Library",
                "location":"Windham, New Hampshire",
                "startDate":"July 2006",
                "endDate":"present",
                "title":"Library Volunteer, Re-circulation",
                "other":"Received Murray Levin Volunteer of the Year Award April 2015"
+            },
+            {
+               "vId":1,
+               "place":"MSPCA at Nevins Farm",
+               "location":"Methuen, Massachusetts",
+               "startDate":"August 2013",
+               "endDate":"May 2015",
+               "title":"Volunteer, Cat Caretaker",
+               "other":""
             }
-         ]
-      ,
+
+         ],
       "OTHERSKILLS":
          ["Theatrical makeup design and application, some conversational French"]
 

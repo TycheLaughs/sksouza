@@ -1,13 +1,12 @@
 <div layout-fill layout-align="center center"  class="resumeHead">
-   <!--<div layout="row" flex-offset="85" hide-gt-sm><a href="assets/resources/usouza_resume2015.pdf"><i class="fa fa-download"></i></a></div>-->
    <div layout="row">&nbsp;</div>
    <div layout="row" layout-align="space-around center">
-      <div flex-gt-sm="25" flex-offset="10"><a href="mailto:{{header.email}}">{{header.email}}</a></div>
-      <div flex-gt-sm="25"><a href="http://{{header.gitHub}}">{{header.gitHub}}</a></div>
-      <div flex-gt-sm="25"><a href="http://{{header.linkedin}}">LinkedIn</a></div>
+      <div flex-gt-sm="25" flex-offset="10"><a href="mailto:{{header.email}}"><i class="fa fa-envelope fa-lg"></i></a></div>
+      <div flex-gt-sm="25"><a href="http://{{header.gitHub}}"><i class="fa fa-github fa-lg"></i></a></div>
+      <div flex-gt-sm="25"><a href="http://{{header.linkedin}}"><i class="fa fa-linkedin-square fa-lg"></i></a></div>
       <div flex-gt-sm="15" hide-xs hide-sm>
-         <a href="assets/resources/usouza_resume2015.pdf">
-            <md-icon md-svg-src="assets/images/PDFIcon.svg" class="pdfIcon" aria-label="PDF download" hide-xs hide-sm></md-icon>
+         <a href="{{header.download}}">
+            <i class="fa fa-file-pdf-o fa-2x"></i>
          </a>
       </div>
    </div>
