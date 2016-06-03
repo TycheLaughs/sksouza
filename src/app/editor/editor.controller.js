@@ -7,7 +7,7 @@
 
         var canv, context;
      	  var i, j;
-        $scope.whichCanv ="large";
+        $scope.whichCanv = "large";
         $scope.max = 9;
         $scope.squareSize = 60;
      	  $scope.xPoints = [];
@@ -35,7 +35,8 @@
              canv = document.getElementById('canvSml');
              $scope.squareSize = 30;
              break;
-        };
+        }
+
         $scope.drawBase = function(){
            for(i = 0; i < $scope.xPoints.length; i++){
              context.fillRect($scope.xPoints[i], $scope.yPoints[i], $scope.squareSize, $scope.squareSize);
@@ -112,7 +113,7 @@
                      context.strokeRect($scope.xPoints[i], $scope.yPoints[i], $scope.squareSize, $scope.squareSize);
                      context.fill();
                      context.stroke();
-                     console.log(JSON.stringify($scope.tiles));
+                     //console.log(JSON.stringify($scope.tiles));
                }
             }
          };
@@ -215,7 +216,7 @@
          $scope.recieveClicks = function(e) {
            $scope.mouseX = Number(e.pageX - canv.offsetLeft);
            $scope.mouseY = Number(e.pageY - canv.offsetTop);
-           console.log($scope.mouseX + ', ' + $scope.mouseY);
+           //console.log($scope.mouseX + ', ' + $scope.mouseY);
            if($scope.canClickTiles){
             $scope.dealWithClicks($scope.mouseX, $scope.mouseY);
             }

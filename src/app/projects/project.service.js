@@ -3,7 +3,7 @@
 
   angular
       .module('sksouza')
-      .service('projects', function($http, $q){
+      .service('projects', function($http){
 
          var projectsData = {};
 

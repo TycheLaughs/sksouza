@@ -1,6 +1,7 @@
 {
   "strict": true,
-  "bitwise": true,
+  "bitwise": false,
+  "browser": true,
   "curly": true,
   "eqeqeq": true,
   "latedef": false,

@@ -3,7 +3,7 @@
 
   angular
       .module('sksouza')
-      .service('resume', function($http, $q){
+      .service('resume', function($http){
 
          var resumeData = {};
 
@@ -23,12 +23,7 @@
                         };
                         return error;
                      });
-
-
                   }
-
             };
-
       });
-
    }());
