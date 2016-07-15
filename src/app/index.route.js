@@ -11,8 +11,7 @@
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+
      })
      .state('folio', {
         url: '/folio',
@@ -31,15 +30,14 @@
        templateUrl: 'app/editor/tileEditor.html',
        controller: 'EditorController',
        controllerAs: 'editor'
-     });
-      /*
-      .state('projects', {
-         url: '/projects',
-         templateUrl: 'app/projects/projects.html',
-         controller: 'projCtrl',
-         controllerAs: 'proj'
+     })
+      .state('resume', {
+         url: '/resume',
+         templateUrl: 'app/resume/resume.html',
+         controller: 'MainController',
+         controllerAs: 'main'
       });
-      */
+
     $urlRouterProvider.otherwise('/');
   }
 

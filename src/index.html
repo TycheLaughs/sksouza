@@ -33,31 +33,25 @@
             <span ui-sref="home" class="myName" hide-md hide-sm hide-xs flex-shrink><h3>Susan Souza</h3></span>
             <span ui-sref="home" class="myName myNameSm" hide-gt-md flex-shrink><h3>Susan Souza</h3></span>
             <span id="topNav" flex-shrink hide-sm hide-md hide-xs>
-               <md-button ui-sref="home" ui-sref-active='md-raised' aria-label="Resume" ng-show="!isSafari">
+               <!--<md-button ui-sref="resume" ui-sref-active='md-raised' aria-label="Resume" ng-show="!isSafari">
                   Resume
-               </md-button>
+               </md-button>-->
                <md-button ui-sref="folio" ui-sref-active='md-raised' aria-label="Portfolio"  ng-show="!isSafari">
                   Examples
                </md-button>
-               <!--<md-button  ui-sref="projects" ui-sref-active='md-raised'  aria-label="Projects">
-                  Projects
-               </md-button>-->
                <md-button  ui-sref="tiles" ui-sref-active='md-raised'  aria-label="Tile Puzzles" ng-show="!isSafari">
                   Puzzles
                </md-button>
             </span>
-            <span flex-shrink layout="row" hide-gt-md>
 
-               <md-button ui-sref="home" class="smallNav" aria-label="Resume" ng-show="(state.current.name != 'home') && !isSafari">
+            <span flex-shrink layout="row" hide-gt-md>
+               <!--<md-button ui-sref="resume" class="smallNav" aria-label="Resume" ng-show="(state.current.name != 'home') && !isSafari">
                   Resume
-               </md-button>
+               </md-button>-->
 
                <md-button  ui-sref="folio" class="smallNav" aria-label="Portfolio"  ng-show="(state.current.name != 'folio') && !isSafari">
                   Examples
                </md-button>
-               <!--<md-button  ui-sref="projects" class="smallNav" aria-label="Projects"  ng-if="state.current.name != 'projects'">
-                  Projects
-               </md-button>-->
                <md-button  ui-sref="tiles" class="smallNav" aria-label="Tile Puzzles"  ng-show="(state.current.name != 'tiles') && !isSafari">
                   Puzzles
                </md-button>
