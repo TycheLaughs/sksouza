@@ -3,7 +3,13 @@
 
   angular
     .module('sksouza')
-    .controller('tileCtrl', function ($scope, $mdMedia, $mdDialog, $http){
+    .controller('tileCtrl', function ($scope, $mdMedia, $mdDialog, $http, $state){
+      $scope.$on('$ViewContentLoaded', function(event) {
+         if (location.hostname == 'tychelaughs.github.io') {
+             ga('send', 'pageview', { page: $state.current.name });
+           }
+       });
+      // console.log($state.current.name);
       var i = 0, j, k = -1;
       var big = 60;
       var small = 30;

@@ -3,27 +3,36 @@
 
   angular
     .module('sksouza')
-    .controller('EditorController', function ($scope) {
+    .controller('EditorController', function ($scope, $window, $state) {
 
-        var canv, context;
-     	  var i, j;
-        $scope.whichCanv = "large";
-        $scope.max = 9;
-        $scope.squareSize = 60;
-     	  $scope.xPoints = [];
-        $scope.yPoints = [];
-        $scope.tiles = [];
-     	  $scope.mouseX = 0;
-        $scope.mouseY = 0;
-     	  $scope.coordTile = {"x": "", "y": ""};
-        $scope.noFill = true;
-        $scope.inactive = "#010E16";
-        $scope.active ="#70C9E3";
-        $scope.normal ="#A6C9E3";
-        $scope.bkg = "gray";
-        $scope.movingStroke = "#010E16";
-     	  $scope.canClickTiles = true;
-        $scope.uhOh = false;
+      $scope.$on('$ViewContentLoaded', function(event) {
+         if (location.hostname == 'tychelaughs.github.io') {
+             ga('send', 'pageview', { page: $state.current.name });
+           }
+
+       });
+       //console.log($state.current.name);
+
+
+      var canv, context;
+  	   var i, j;
+      $scope.whichCanv = "large";
+      $scope.max = 9;
+      $scope.squareSize = 60;
+  	   $scope.xPoints = [];
+      $scope.yPoints = [];
+      $scope.tiles = [];
+  	   $scope.mouseX = 0;
+      $scope.mouseY = 0;
+  	   $scope.coordTile = {"x": "", "y": ""};
+      $scope.noFill = true;
+      $scope.inactive = "#010E16";
+      $scope.active ="#70C9E3";
+      $scope.normal ="#A6C9E3";
+      $scope.bkg = "gray";
+      $scope.movingStroke = "#010E16";
+  	   $scope.canClickTiles = true;
+      $scope.uhOh = false;
 
         switch($scope.whichCanv){
          case 'large':
