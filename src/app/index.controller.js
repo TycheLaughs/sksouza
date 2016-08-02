@@ -4,13 +4,13 @@
   angular
     .module('sksouza')
 
-    .controller('indexCtrl', function ($scope, $state) {
-      $scope.$on('$viewContentLoaded', function(event) {
+    .controller('indexCtrl', function ($scope,  $window, $state) {
+      /*$scope.$on('$viewContentLoaded', function(event) {
          //if (location.hostname === 'tychelaughs.github.io') {
-             ga('send', 'pageview', { page: $state.current.name });
+             $window.ga('send', 'pageview', { page: $state.current.name });
           //}
 
-      });
+      });*/
       $scope.isOpen = false;
       $scope.state = $state;
       $scope.isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
