@@ -5,9 +5,9 @@
     .module('sksouza')
     .controller('tileCtrl', function ($scope, $mdMedia, $mdDialog, $http, $state){
       $scope.$on('$stateChangeSuccess', function(event) {
-         if (location.hostname === 'tychelaughs.github.io') {
+         //if (location.hostname === 'tychelaughs.github.io') {
              ga('send', 'pageview', { page: $state.current.name });
-           }
+          // }
        });
       // console.log($state.current.name);
       var i = 0, j, k = -1;
