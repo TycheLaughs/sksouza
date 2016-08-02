@@ -5,7 +5,7 @@
     .module('sksouza')
 
     .controller('indexCtrl', function ($scope, $state) {
-      $scope.$on('$stateChangeSuccess', function(event) {
+      $scope.$on('$viewContentLoaded', function(event) {
          //if (location.hostname === 'tychelaughs.github.io') {
              ga('send', 'pageview', { page: $state.current.name });
           //}
