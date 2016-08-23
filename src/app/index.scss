@@ -454,7 +454,11 @@ div.subtitle{
 }
 @media(max-width:320px){
    .lander{
-      padding-top: 15vh;
+      padding-top: 11vh;
+   }
+   .lander > div{
+      padding: 1.5em;
+      display: block;
    }
    .folioContent{
       padding-top: 10vh;
