@@ -49,7 +49,7 @@
                <!--<md-button ui-sref="resume" ui-sref-active='md-raised' aria-label="Resume" ng-show="!isSafari">
                   Resume
                </md-button>-->
-               <md-button ui-sref="folio" ui-sref-active='md-raised' aria-label="Portfolio"  ng-show="!isSafari">
+               <md-button ui-sref="folio" ui-sref-active='md-raised' aria-label="Portfolio">
                   Examples
                </md-button>
                <md-button  ui-sref="tiles" ui-sref-active='md-raised'  aria-label="Tile Puzzles" ng-show="!isSafari">
@@ -62,7 +62,7 @@
                   Resume
                </md-button>-->
 
-               <md-button  ui-sref="folio" class="smallNav" aria-label="Portfolio"  ng-show="(state.current.name != 'folio') && !isSafari">
+               <md-button  ui-sref="folio" class="smallNav" aria-label="Portfolio"  ng-show="state.current.name != 'folio'">
                   Examples
                </md-button>
                <md-button  ui-sref="tiles" class="smallNav" aria-label="Tile Puzzles"  ng-show="(state.current.name != 'tiles') && !isSafari">

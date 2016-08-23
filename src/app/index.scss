@@ -453,7 +453,12 @@ div.subtitle{
 
 }
 @media(max-width:320px){
-
+   .lander{
+      padding-top: 25vh;
+   }
+   .folioContent{
+      padding-top: 10vh;
+   }
    md-tabs-content-wrapper{
       top:6vh;
 
