@@ -28,9 +28,6 @@
 
 
       var canv =  $document[0].getElementById('canv');
-
-      //$log.debug(canv);
-      //var canvSml=  $document[0].getElementById('canvSml');
       /*
       Determine whether we're on a small screen or not and choose the vm.canvas
       we're using accordingly*/
