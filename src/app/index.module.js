@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('sksouza', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial', 'ngFitText']);
+    .module('sksouza', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap']);
 
-}());
+})();

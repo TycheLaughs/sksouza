@@ -36,6 +36,13 @@
                "projRepo":"github.com/TycheLaughs/sksouza/src/app/tiles",
                "projDate":"January 2016",
                "desc":"Little tile puzzles using HTML5 Canvas"
+            },
+            {
+               "name":"Tile Editor",
+               "projURL":"tychelaughs.github.io/sksouza/#/editor",
+               "projRepo":"github.com/TycheLaughs/tileEditor",
+               "projDate":"Spring 2016",
+               "desc":"Facilitates puzzle creation for Tiles in multiple canvas sizes and displays JSON on page. Best on larger screens."
             }
          ]
 

@@ -11,8 +11,6 @@
     $logProvider.debugEnabled(true);
 
 
-    // Set options third-party lib
-
   }
 
 })();

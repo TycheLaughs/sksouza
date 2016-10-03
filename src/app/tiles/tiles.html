@@ -1,0 +1,34 @@
+<div class="inner">
+   <div class="row puzz">
+      <div class="col-xs-10 col-sm-offset-1">
+         <uib-alert ng-repeat="alert in puzz.alerts" class="alert-info" close="puzz.closeAlert()" dismiss-on-timeout="2000">{{alert.msg}}</uib-alert>
+         <div class="row">
+            <div class="col-xs-12 col-sm-7 col-sm-offset-2 text-center">
+               <canvas id="canv" class="canv hidden-xs" width="600" height="600"></canvas>
+               <canvas id="canvSml" class="canv visible-xs" width="300" height="300"></canvas>
+            </div>
+            <div class="col-sm-3 puzzInstructions hidden-xs">
+               <div class="panel panel-default">
+                  <div class="panel-body text-center">
+                  <button type="button" class="btn btn-primary uziPuzzReset" aria-label="Reset" ng-click="puzz.clearPuzzle()">
+                     Reset Puzzle
+                  </button>
+                  <p>Select all tiles via click or tap without crossing your own path or using diagonals.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row visible-xs">
+         <div class="col-xs-11 col-xs-offset-1 puzzInstructions">
+            <div class="panel panel-default">
+               <div class="panel-body text-center panelText">
+                  <button type="button" class="btn btn-primary uziPuzzReset" aria-label="Reset" ng-click="puzz.clearPuzzle()">
+                     Reset Puzzle
+                  </button>
+                  <p class="instrText">Select all tiles via click or tap without crossing your own path or using diagonals.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

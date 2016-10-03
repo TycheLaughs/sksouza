@@ -3,12 +3,10 @@
 
   angular
     .module('sksouza')
-    .run(runBlock);
+    .controller('NavController', NavController);
 
   /** @ngInject */
-  function runBlock($log) {
+  function NavController() {
 
-    $log.debug('runBlock end');
   }
-
 })();

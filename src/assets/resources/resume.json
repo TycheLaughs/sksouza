@@ -7,8 +7,7 @@
             "website":"tychelaughs.github.io/sksouza",
             "linkedin":"linkedin.com/in/uzisusansouza",
             "download":"assets/resources/uSouza_resume.pdf"
-         }
-      ,
+         },
       "EDUCATION":
          [
             {
@@ -17,11 +16,7 @@
                "degreeDate":"May 2016",
                "school":"University of Massachusetts Lowell",
                "gpa":"3.53 Major, 3.46 Cumulative",
-               "honors":
-                  [
-                     "Dean's List Fall 2013, Spring 2014, 2015 & 2016",
-                     "Multiple Scholarships 2014-16"
-                  ]
+               "honors": "Dean's List, Multiple Scholarships 2014-16"
             },
             {
                "edId": 1,
@@ -29,109 +24,154 @@
                "degreeDate":"November 2011",
                "school":"Savannah College of Art and Design",
                "gpa":"3.24 Cumulative",
-               "honors":
-                  [
-                     "Dean's List",
-                     "Academic Scholarship Fall 2007-11"
-                  ]
+               "honors":"Dean's List, Academic Scholarship Fall 2007-11"
             }
-         ]
-      ,
+         ],
       "SKILLS":{
          "LANG": [
-            "Angular Material",
-            "AngularJS",
-            "C",
-            "C++",
-            "CSS3",
-            "HTML5 Canvas and SVG",
-            "HTML5",
-            "JavaScript",
-            "jQuery",
-            "JSON",
-            "MySQL",
-            "Python",
-            "SQL",
-            "Three.js",
-            "Twitter Bootstrap",
-            "Unit Tests with Karma & Jasmine",
-            "XML"
+            {"name": "Angular Material",
+            "cat": ["Interactive"]},
+            {"name": "AngularJS" ,
+            "cat": ["Interactive"]},
+            {"name": "C",
+            "cat": ["CS"]},
+            {"name": "C++" ,
+            "cat": ["CS", "Interactive"]},
+            {"name": "CSS3",
+            "cat": ["Interactive"]},
+            {"name": "HTML5 Canvas and SVG",
+            "cat": ["Interactive"]},
+            {"name": "HTML5",
+            "cat": ["Interactive"]},
+            {"name": "JavaScript",
+            "cat": ["Interactive","CS"]},
+            {"name": "jQuery",
+            "cat": ["Interactive","CS"]},
+            {"name": "JSON",
+            "cat": ["Interactive","CS"]},
+            {"name": "MySQL",
+            "cat": ["Interactive"]},
+            {"name": "Python",
+            "cat": ["Interactive","CS"]},
+            {"name": "SQL",
+            "cat": ["Interactive","CS"]},
+            {"name": "Three.js",
+            "cat": ["Interactive"]},
+            {"name": "Twitter Bootstrap",
+            "cat": ["Interactive"]},
+            {"name": "Unit Tests with Karma & Jasmine",
+            "cat": ["Interactive","CS"]},
+            {"name": "XML",
+            "cat": ["Interactive","CS"]}
          ],
          "TOOLS":[
-            "Adobe Creative Suite 5",
-            "After Effects",
-            "Atom",
-            "Autodesk Maya",
-            "Bower and NPM",
-            "Git",
-            "Inkscape",
-            "IntelliJ IDEA",
-            "Microsoft Office Suite",
-            "Microsoft Visual Studio",
-            "Unity3D",
-            "Unreal Engine 3",
-            "ZBrush"
+            {"name": "Adobe Creative Suite",
+            "cat": ["Interactive"]},
+            {"name": "After Effects",
+            "cat": ["Interactive"]},
+            {"name": "Atom",
+            "cat": ["Interactive","CS"]},
+            {"name": "Autodesk Maya",
+            "cat": ["Interactive"]},
+            {"name": "Git",
+            "cat": ["Interactive","CS"]},
+            {"name": "Inkscape",
+            "cat": ["Interactive"]},
+            {"name": "IntelliJ IDEA",
+            "cat": ["Interactive","CS"]},
+            {"name": "Microsoft Visual Studio",
+            "cat": ["CS"]},
+            {"name": "Unity3D",
+            "cat": ["Interactive"]},
+            {"name": "Unreal Engine 3",
+            "cat": ["Interactive"]},
+            {"name": "ZBrush",
+            "cat": ["Interactive"]}
+
+
             ]
       },
-      "EXPOSEDTO":[
-         "Agile development",
-         "Angular Material",
-         "Blender",
-         "Bower",
-         "C#",
-         "ES6",
-         "Flask",
-         "Grunt",
-         "Gulp",
-         "IA32",
-         "JIRA and Confluence",
-         "MIPS",
-         "MongoDB",
-         "Netbeans",
-         "NodeJS",
-         "Perl",
-         "PHP",
-         "SFML",
-         "SVN"
+      "EXPOSEDTO": [
+         {"name": "Agile development",
+         "cat": ["CS","Interactive"]},
+         {"name": "C#",
+         "cat": ["CS","Interactive"]},
+         {"name": "ES6",
+         "cat": ["Interactive"]},
+         {"name": "Flask",
+         "cat": ["Interactive"]},
+         {"name": "Grunt",
+         "cat": ["Interactive"]},
+         {"name": "Gulp",
+         "cat": ["Interactive"]},
+         {"name": "IA32",
+         "cat": ["CS"]},
+         {"name": "JIRA and Confluence",
+         "cat": ["CS","Interactive"]},
+         {"name": "Linux & Unix Environments",
+         "cat": ["CS","Interactive"]},
+         {"name": "MongoDB",
+         "cat": ["Interactive"]},
+         {"name": "Netbeans",
+         "cat": ["CS"]},
+         {"name": "NodeJS",
+         "cat": ["Interactive"]},
+         {"name": "Perl",
+         "cat": ["CS"]},
+         {"name": "PHP",
+         "cat": ["CS","Interactive"]},
+         {"name": "Scheme",
+         "cat": ["CS"]},
+         {"name": "SFML",
+         "cat": ["CS", "Interactive"]},
+         {"name": "TDD",
+         "cat": ["CS", "Interactive"]}
+
       ],
       "XP":
          [
             {
                "xId": 0,
-               "employer":"University of Massachusetts Lowell",
+               "employer":"CLASS, University of Massachusetts Lowell",
+               "employerURL":"",
                "location":"Lowell, MA",
                "startDate":"September 2014",
-               "endDate":"present",
+               "endDate":"August 2016",
                "title":"Peer Tutor, Computer Science",
                "irrelevant":"false",
+               "cat": ["CS", "Interactive"],
                "desc":
                   [
-                     "Guide students to a better understanding of concepts from class both through additional clarification and use of the Socratic teaching method",
-                     "Help students with debugging techniques, C and C++ syntax",
-                     "Work with students to break down problems into manageable chunks for better understanding"
+                     "Guided students to a better understanding of concepts from class both through additional clarification and use of the Socratic teaching method",
+                     "Helped students with debugging techniques, C and C++ syntax",
+                     "Worked with students to break down problems into manageable chunks for better understanding"
                   ]
             },
             {
                "xId": 1,
                "employer":"Crescendo Content Marketing",
+               "employerURL":"",
                "location":"Woburn, MA",
                "startDate":"July 2015",
                "endDate":"August 2015",
-               "title":"Engineering Co-op (Intern)",
+               "title":"Engineering Co-op",
+               "cat": ["CS", "Interactive"],
                "irrelevant":"false",
                "desc":
                   [
-                     "Worked in Agile environment to increase unit test coverage across project front end by over 10%",
+                     "Worked in Agile environment to increase unit test coverage across project front end by well over 10%",
                      "Promoted and maintained code cleanliness and integrity across code-base"
                   ]
             },
             {
                "xId": 2,
                "employer":"Percussion Software",
+               "employerURL":"",
                "location":"Woburn, MA",
                "startDate":"May 2015",
                "endDate":"July 2015",
-               "title":"Engineering Co-op (Intern)",
+               "title":"Engineering Co-op",
+               "cat": ["CS", "Interactive"],
                "irrelevant":"false",
                "desc":
                   [
@@ -144,38 +184,44 @@
             {
                "xId": 3,
                "employer":"University of Massachusetts Lowell",
+               "employerURL":"",
                "location":"Lowell, MA",
                "startDate":"September 2014",
                "endDate":"December 2014",
                "title":"Grader, Computer Science",
                "irrelevant":"false",
+               "cat": ["CS", "Interactive"],
                "desc":
                   [
-                     "Reviewed code for correctness, for errors and against rubric; gave feedback"
+                     "Reviewed code for correctness, for errors and against rubric, gave feedback"
                   ]
             },
             {
                "xId": 4,
                "employer":"Canobie Lake Park",
+               "employerURL":"",
                "location":"Salem, NH",
                "startDate":" August 2013",
                "endDate":"October 2013",
                "title":"Screeemfest Actor/Makeup Artist",
                "irrelevant":"true",
+               "cat": ["nonTech"],
                "desc":
                   [
-                     "Acted in haunt 'Virus'",
-                     "Applied horror makeup to actors and self within allotted time"
+                     "Applied horror makeup to haunted house actors and self on a tight schedule",
+                     "Frightened attendees as an actor in haunt 'Virus'"
                   ]
             },
             {
                "xId": 5,
                "employer":"United Parcel Service",
+               "employerURL":"",
                "location":"Nashua, NH",
                "startDate":"November 2012",
                "endDate":"December 2012",
                "title":"Seasonal Driver Helper",
                "irrelevant":"true",
+               "cat": ["nonTech"],
                "desc":
                   [
                      "Ensured delivery of parcels from package car to doorstep in a timely, efficient and safe manner during peak season"
@@ -184,11 +230,13 @@
             {
                "xId": 6,
                "employer":"Macy's Inc.",
+               "employerURL":"",
                "location":"Salem, NH",
                "startDate":"November 2011",
                "endDate":"December 2011",
                "title":"Seasonal Fragrance and Cosmetics Ringer",
                "irrelevant":"true",
+               "cat": ["nonTech"],
                "desc":
                   [
                      "Rang up purchases",
@@ -203,12 +251,14 @@
          [
             {
                "pId": 0,
-               "projectTitle":"ASL-to-text",
+               "projectTitle":"ASL-to-Text",
+               "pType":["",""],
                "projectDesc":"ASL alphabet transcriber using the LeapMotion and Python",
                "hasDateRange":"false",
                "date":"Spring 2016",
                "endDate":"",
                "title":"Programmer",
+               "cat": ["CS", "Interactive"],
                "desc":
                   [
                      "Worked with group to construct methods for gathering sign data and determining which data to use from the Leap API",
@@ -222,11 +272,13 @@
             {
                "pId": 1,
                "projectTitle":"Tiles",
+               "pType":["",""],
                "projectDesc":"Little tile puzzles on my website with HTML5 Canvas",
                "hasDateRange":"false",
                "date":"January 2016",
                "endDate":"",
                "title":"Programmer/Designer",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Designed and implemented puzzle game",
@@ -237,11 +289,13 @@
             {
                "pId": 2,
                "projectTitle":"Dinner Wizard",
+               "pType":["",""],
                "projectDesc":"Interactive Meal Suggestion App, AngularJS",
                "hasDateRange":"false",
                "date":"Spring 2015",
                "endDate":"",
                "title":"Programmer/Designer/UI",
+               "cat": ["CS", "Interactive"],
                "desc":
                   ["Designed and implemented front end",
                      "Provided all ingredient and combination data",
@@ -251,11 +305,13 @@
             {
                "pId": 3,
                "projectTitle":"Those Darn Dastardly Dragon Attacks!",
+               "pType":["",""],
                "projectDesc":"Text-based Game in C++",
                "hasDateRange":"false",
                "date":"Summer 2014",
                "endDate":"",
                "title":"Programmer/Designer",
+               "cat": ["CS", "Interactive"],
                "desc":
                   [
                      "Implemented castle defense and management game with room for more features"
@@ -265,11 +321,13 @@
             {
                "pId": 4,
                "projectTitle":"Sira",
+               "pType":["",""],
                "projectDesc":"First-Person Survival-Puzzler, vertical slice only, UDK",
                "hasDateRange":"true",
                "date":"Fall 2011",
                "endDate":"Spring 2012",
                "title":"FX Artist",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Created various real-time particle effects in UDK as per given specifications from main project team"
@@ -279,11 +337,13 @@
             {
                "pId": 5,
                "projectTitle":"Autumn Falling",
+               "pType":["",""],
                "projectDesc":"Directed Game Pre-visualization Project",
                "hasDateRange":"false",
                "date":"Fall 2011",
                "endDate":"",
                "title":"Artist(2D)",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Designed characters, creatures, environmental assets, items, UI and an interactive quest dialogue sequence",
@@ -294,11 +354,13 @@
             {
                "pId": 6,
                "projectTitle":"Codex",
+               "pType":["",""],
                "projectDesc":"2.5D Side-scrolling platformer, Unity3D",
                "hasDateRange":"false",
                "date":"Spring 2011",
                "endDate":"",
                "title":"Writer/Designer/Artist/VFX",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Team used Agile development methods successfully to monitor and increase productivity",
@@ -310,11 +372,13 @@
             {
                "pId": 7,
                "projectTitle":"Fate Saga",
+               "pType":["",""],
                "projectDesc":"Animation Trailer and Pilot by Dana Corrigan",
                "hasDateRange":"true",
                "date":"Winter 2010",
                "endDate":"Spring 2011",
                "title":"Texture Artist",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Painted textures for Crystalin Tavern interior and instructed other artists on project in UV mapping techniques"
@@ -324,11 +388,13 @@
             {
                "pId": 8,
                "projectTitle":"Sight Unseen",
+               "pType":["",""],
                "projectDesc":"Cthulu Live LARP supplement written by William Thrasher",
                "hasDateRange":"false",
                "date":"Spring 2011",
                "endDate":"",
                "title":"GM/Coordinator/'Catcher'",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Obtained the space from the school and worked with catchers to prepare the space and sensory materials",
@@ -339,11 +405,13 @@
             {
                "pId": 9,
                "projectTitle":"Venyar",
+               "pType":["",""],
                "projectDesc":"Homebrew Tabletop RPG",
                "hasDateRange":"true",
                "date":"Spring 2009",
                "endDate":"Spring 2011",
                "title":"GM/Storyteller",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Created world and multi-threaded narrative for the 2-year game",
@@ -355,11 +423,13 @@
             {
                "pId": 10,
                "projectTitle":"Global Incineration",
+               "pType":["",""],
                "projectDesc":"Side-scrolling reverse Brick Break, UDK",
                "hasDateRange":"false",
                "date":"Winter 2011, Global Game Jam",
                "endDate":"",
                "title":"Artist",
+               "cat": ["Interactive"],
                "desc":
                   [
                      "Created and implemented particle effects",
@@ -373,6 +443,7 @@
             {
                "vId":0,
                "place":"Windham Nesmith Library",
+               "businessURL":"",
                "location":"Windham, New Hampshire",
                "startDate":"July 2006",
                "endDate":"present",
@@ -382,6 +453,7 @@
             {
                "vId":1,
                "place":"MSPCA at Nevins Farm",
+               "businessURL":"",
                "location":"Methuen, Massachusetts",
                "startDate":"August 2013",
                "endDate":"May 2015",

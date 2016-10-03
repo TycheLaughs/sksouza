@@ -1,0 +1,377 @@
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+/** COLOR REFERENCE
+
+#01080C dark dark dark blue for topmost/nav
+#70C9E3 bright pale blue for header text and logo
+#275961 faded blue for navbar toggle
+
+#010E16 dark dark blue for gradient
+#011621 another dark blue for gradient
+
+#01202F md dark blue
+#011E38 dark blue
+#1ED1FB light blue
+#A6C9E3 pale pale blue
+#0E6791 med blue
+#01B2D5 bright blue
+
+**/
+
+body{
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1em;
+   background-image: linear-gradient(to top,#011621, #010E16);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   color: #cddada;
+}
+p{
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1.5em;
+}
+i{
+   color: #cddada;
+}
+.navbar{
+   background-color:#01080C;
+   color:#70C9E3;
+   fill: #70C9E3;
+   border-color:transparent;
+   margin-bottom:2px;
+   /*max-height:18vh;*/
+}
+.dropdown-menu{
+   background-color: #01080C;
+   font-size: 1em;
+   border-color:#01202F;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.dropdown-menu > li > a,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+   background-color: transparent;
+   color:#70C9E3;
+   font-size: 1.6em;
+   top:.7vh;
+   cursor: pointer;
+   font-family:  'Ubuntu', sans-serif;
+
+}
+.navbar-default .navbar-nav > li:hover,
+.dropdown-menu > li:hover,
+.activeNav{
+   color:#70C9E3;
+   border-bottom:4px solid #70C9E3;
+   background-color: transparent;
+   font-size: 1em;
+   top:0;
+   cursor: pointer;
+   font-family:  'Ubuntu', sans-serif;
+}
+   .navbar-default .navbar-toggle{
+   top: -40px;
+   margin-top: 2px;
+   border-top-color: transparent;
+   border-left-color:transparent;
+   border-right-color:transparent;
+   border-bottom-color:transparent;
+   margin-top: -10px;
+}
+.navbar-collapse{
+   background-color: #01080C;
+}
+
+i.fa-bars,
+i.fa-bars:hover,
+i.fa-bars:focus {
+   color:#275961;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+top: -40px;
+margin-top: 2px;
+border-color:transparent;
+background-color:transparent;
+margin-top: -10px;
+}
+
+.navbar-default .navbar-collapse{
+   border-top-color: transparent;
+   border-left-color:transparent;
+   border-right-color:transparent;
+   border-bottom-color:transparent;
+   border-width:2px;
+}
+.barMod{
+   max-height:50px;
+}
+.myName{
+   font-family:  'Muli', sans-serif;
+   /*font-size: 1.7em;*/
+   color: #70C9E3;
+   position:relative;
+   cursor: pointer;
+   margin-top: 7px;
+   margin-right:2px;
+
+}
+
+.myLogo{
+   position:relative;
+   top:.7vh;
+   width:7vw;
+   height: 5vh;
+   color:#70C9E3;
+   fill: #70C9E3;
+   cursor: pointer;
+}
+.inner{
+   padding-top: 12vh;
+}
+.pdfSpecial{
+   left:-4.5vw;
+}
+.pdfSpecialRev{
+   margin-left:15px;
+}
+.landingHeader{
+   margin-bottom:2vh;
+}
+
+.dropPDF{
+   color:#70C9E3;
+   margin-right: 3px;
+}
+
+.btn-uzi{
+   background-color: transparent;
+   border: none;
+   border-radius: 0;
+   color:#cddada;
+}
+
+.btn-uzi:hover,
+.btn-uzi.active,
+.btn-uzi.active:hover,
+.btn-uzi:active:hover,
+.btn-uzi.active:active,
+.btn-uzi.active:focus,
+.btn-uzi:focus{
+   background-color: transparent;
+   border-bottom:3px solid #cddada;
+   border-radius: 0;
+   color:#cddada;
+}
+/**
+.btn-group > .btn:first-child{
+   border-left: none;
+}
+.btn-group > .btn:last-child{
+   border-right: none;
+}**/
+.resumeContent{
+   font-size: 1.35em;
+}
+.titleRow{
+   font-size:1.2em;
+}
+.sectionHeading, .titleRow{
+   font-weight: bold;
+
+}
+.sectionHeading{
+   font-size:1.2em;
+
+}
+.subTitle{
+   font-size: 1.1em;
+}
+
+.panel-default{
+   background-color: transparent;
+   border-color:#01202F;
+
+}
+.chartBtn{
+   cursor:pointer;
+}
+.fa-li.fa-circle{
+   font-size:.6em;
+   top:.8em;
+}
+.keepTog{
+   white-space: nowrap!important;
+}
+.keepTog > i{
+   display: none!important;
+}
+
+
+
+.proj{
+   font-size:1.1em;
+}
+
+.projSectionHeading{
+   font-size:1.5em;
+   font-weight:bold;
+}
+.projContent{
+   margin-bottom:2em;
+   font-size: 1.2em;
+}
+a.projLink{
+   color:#cddada;
+}
+.fa-external-link{
+   margin-left:.3em;
+}
+
+.puzz{
+   top:30vh;
+}
+.puzzInstructions{
+   top:25vh;
+}
+.instrText{
+   margin-top:1.1em;
+   margin-bottom:1.1em;
+}
+.uziPuzzReset{
+   background-color:#0E6791;
+}
+
+#canvSml{
+   position:relative;
+   top:50px;
+}
+
+@media(max-width:767px){
+   .keepTog > i{
+
+      display: inline-block!important;
+      margin-left:1em;
+
+   }
+   .puzzInstructions{
+      top:8vh;
+   }
+   .panelText{
+      padding:.4em;
+   }
+   .instrText{
+      font-size:1.1em;
+      margin-top:.3em;
+      margin-bottom:.3em;
+   }
+   .uziPuzzReset{
+      font-size:1.1em;
+      padding:.5em;
+   }
+}
+
+
+/** animations for resume show/hide sorting **/
+.animate-show.ng-hide-remove {
+    -webkit-animation: enter 500ms ease;
+    animation: enter 500ms ease;
+	  display: block;
+	  animation-fill-mode: forwards;
+    position: relative;
+}
+@-webkit-keyframes enter {
+	from {
+	    opacity: 0;
+    	height: 0px;
+    	right: -70px;
+    }
+    65% {
+    	right: 10px;
+    	opacity: 1;
+    }
+    75% {
+    	right: 10px;
+    	opacity: 1;
+    }
+    to {
+        opacity: 1;
+    	height: 30px;
+    	right: 0px;
+    }
+}
+@keyframes enter {
+	from {
+	    opacity: 0;
+    	height: 0px;
+    	right: -70px;
+    }
+    65% {
+    	right: 10px;
+    	opacity: 1;
+    }
+    75% {
+    	right: 10px;
+    	opacity: 1;
+    }
+    to {
+        opacity: 1;
+    	height: 30px;
+    	right: 0px;
+    }
+}
+
+.animate-show.ng-hide-add{
+    -webkit-animation: leave 500ms ease;
+    animation: leave 500ms ease;
+	display: block;
+	animation-fill-mode: forwards;
+    position: relative;
+}
+@-webkit-keyframes leave {
+	to {
+	    opacity: 0;
+    	height: 0px;
+    	right: -70px;
+    }
+    20% {
+    	right: 15px;
+    	opacity: 1;
+    }
+     30%{
+      right: 15px;
+      opacity: 1;
+    }
+    from {
+      opacity: 1;
+    	height: 30px;
+    	right: 0px;
+    }
+}
+@keyframes leave {
+	to {
+	    opacity: 0;
+    	height: 0px;
+    	right: -70px;
+    }
+    20% {
+    	right: 15px;
+    	opacity: 1;
+    }
+    30%{
+      right: 15px;
+      opacity: 1;
+    }
+    from {
+        opacity: 1;
+    	height: 30px;
+    	right: 0px;
+    }
+}

@@ -3,39 +3,40 @@
 
   angular
     .module('sksouza')
-    .config(routeConfig);
+    .config(routerConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider, $urlRouterProvider) {
+  function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
-
-     })
-     .state('folio', {
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .state('resume', {
+        url: '/resume',
+        templateUrl: 'app/resume/resume.html',
+        controller: 'ResumeController',
+        controllerAs: 'resume'
+      })
+      .state('folio', {
         url: '/folio',
         templateUrl: 'app/folio/folio.html',
         controller: 'FolioController',
         controllerAs: 'folio'
-     })
-     .state('tiles', {
+      })
+      .state('tiles', {
         url: '/tiles',
-        templateUrl: 'app/tilePuzzles/tiles.html',
-        controller: 'tileCtrl',
-        controllerAs: 'tiles'
-     })
-     .state('editor', {
-       url: '/editor',
-       templateUrl: 'app/editor/tileEditor.html',
-       controller: 'EditorController',
-       controllerAs: 'editor'
-     })
-      .state('resume', {
-         url: '/resume',
-         templateUrl: 'app/resume/resume.html',
-         controller: 'MainController',
-         controllerAs: 'main'
+        templateUrl: 'app/tiles/tiles.html',
+        controller: 'TilesController',
+        controllerAs: 'puzz'
+      })
+      .state('editor', {
+        url: '/editor',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'editor'
       });
 
     $urlRouterProvider.otherwise('/');
