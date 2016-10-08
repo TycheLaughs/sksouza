@@ -49,7 +49,7 @@ p{
    top:.2em;
    opacity: 100;
 }
-.footer > a{
+.footerInner > a{
    color: #cddada;
 
 }
@@ -238,7 +238,6 @@ margin-top: -10px;
 }
 
 
-
 .proj{
    font-size:1.1em;
 }
@@ -301,15 +300,19 @@ button.close{
 
 }
 
+.fa-eye{
+   display:none;
+}
+
+
+
 @media(max-width:767px){
    .landingHeader{
       margin-bottom:2.5vh;
    }
    .keepTog > i{
-
       display: inline-block!important;
       margin-left:1em;
-
    }
    .puzzInstructions{
       top:8vh;
@@ -326,17 +329,33 @@ button.close{
       font-size:1.1em;
       padding:.5em;
    }
-   .footer{
+   .footerInner{
       -webkit-transition:  opacity 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
       transition: opacity 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
       opacity:.15;
    }
-   .footer:active, .footer:hover, .footer:focus, .footer > a:hover,
-   .footer > a:active, .footer > a:focus{
+   .fa-eye:hover + .footerInner, .fa-eye:focus + .footerInner, .fa-eye:active + .footerInner, .footer > a:hover,
+   .footerInner > a:active, .footer > a:focus{
       -webkit-transition:  opacity  1s;
       transition: opacity 1s;
       opacity:2;
    }
+   .fa-eye{
+      display:inline-block;
+      -webkit-transition:  opacity  2.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+      transition: opacity 2.5s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+      opacity:2;
+      cursor:pointer;
+      margin-right: .4em;
+   }
+   .fa-eye:hover, .fa-eye:focus, .fa-eye:active{
+      -webkit-transition:  opacity .5s;
+      transition: opacity .5s;
+      opacity:0;
+   }
+   /** I always forget how to hover or tap one thing and affect another:
+   http://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-a-div-is-hovered
+   **/
 
 }
 
