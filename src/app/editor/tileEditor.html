@@ -1,0 +1,57 @@
+<div class="inner">
+<!--
+      THIS PAGE BEST VIEWED ON A LARGE SCREEN
+-->
+
+   <div class="row editor">
+      <div class="col-xs-3 col-xs-offset-1">
+         <canvas id="canvSmlEd" width="300" height="300" style="border:solid 1px gray" ng-click="editor.recieveClicks($event)"></canvas>
+      </div>
+      <div class="col-xs-4">
+         <canvas id="canvEd" width="600" height="600"  style="border:solid 1px gray" ng-click="editor.recieveClicks($event)"></canvas>
+      </div>
+      <div class="col-xs-4">
+         <div class="row">
+            <div class="btn-group">
+              <label class="btn btn-primary" ng-model="editor.whichCanv" ng-change="editor.switchCanv()" uib-btn-radio="'large'">Large Canvas</label>
+              <label class="btn btn-primary" ng-model="editor.whichCanv" ng-change="editor.switchCanv()" uib-btn-radio="'small'">Small Canvas</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+               <button type="button" class="btn btn-primary" id="upBtn" ng-click="editor.up()">Nudge Up</button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="btn-group">
+               <label type="button" class="btn btn-primary"id="leftBtn" ng-click="editor.left()">Nudge Left</label>
+               <label type="button" class="btn btn-primary"id="righttBtn" ng-click="editor.right()">Nudge Right</label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+               <button type="button" class="btn btn-primary" id="downBtn" ng-click="editor.down()">Nudge Down</button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+               <button type="button" class="btn btn-primary" id="resetBtn" ng-click="editor.tileReset()">Reset</button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-6 col-xs-offset-1 ">
+               <ul class="list-unstyled outputBlock">
+                  <li ng-if="editor.tiles.length > 0">[</li>
+                  <li ng-repeat="tile in editor.tiles track by $index">
+                     {{tile|json}}<span ng-if="$index !== editor.tiles.length -1">,</span>
+                  </li>
+                  <li ng-if="editor.tiles.length > 0">]</li>
+               </ul>
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+
+</div>

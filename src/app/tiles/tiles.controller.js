@@ -12,9 +12,7 @@
       var big = 60;
       var small = 30;
 
-      /*vm.sml = $mdMedia('max-width: 700px');
-      vm.lrg = $mdMedia('min-width: 701px');*/
-      //console.log(vm.sml);
+
       vm.xPoints = [];
       vm.yPoints = [];
       vm.visited = [];
@@ -29,7 +27,7 @@
 
       var canv =  $document[0].getElementById('canv');
       /*
-      Determine whether we're on a small screen or not and choose the vm.canvas
+      Determine whether we're on a small screen or not and choose the canvas
       we're using accordingly*/
       if(vm.useSmall){
          canv =  $document[0].getElementById('canvSml');
@@ -39,7 +37,7 @@
       vm.context = canv.getContext("2d");
       vm.mouseY = 0;
       vm.mouseX = 0;
-      vm.baseColor = "#0E6791";//"#01202F"; //"#A6C9E3";
+      vm.baseColor = "#0E6791";
       vm.activeColor = "#70C9E3";
       vm.wonRound = false;
       vm.puzzleData = {};
@@ -87,7 +85,7 @@
          }
       }
 
-      /*check cursor does all of our hard work:
+      /*runPuzzle does all of our hard work:
          it checks if the click data it was given is within a valid square and
          paints that square if a valid selection.
       */
@@ -110,17 +108,22 @@
                      //$log.debug(vm.prev);
                      //$log.debug(JSON.stringify(vm.visited));
                      vm.validTile = true;
+                     isWin();
+                     vm.validTile = false;
                   }
                }
             }
 
             updatePuzzle();
-            isWin();
-            vm.validTile = false;
+            //isWin(); //need to move the isWin check to the event listener on next pass
+
 
          }
       }
 
+
+      /** isInPuzzle returns true if the given coordinates are within any
+      of the puzzle tiles **/
       function isInPuzzle(x, y){
          //$log.debug(vm.xPoints);
          for(i = 0; i < vm.xPoints.length; i++){
@@ -136,6 +139,9 @@
          return false;
       }
 
+
+      /** getPuzzleCoords returns an object containing the top-left corner
+      coordinates of the puzzle in which the passed coordinates are found**/
       function getPuzzleCoord(x, y){
 
          for(i = 0; i < vm.xPoints.length; i++){
@@ -150,6 +156,8 @@
          return {};
       }
 
+      /** hasBeenVisited returns true if the coordinates of the clicked tile
+      being examined is in the visited array of tiles **/
       function hasBeenVisited(){
          if(vm.visited.length === 0){
             //$log.debug("first tile in this puzzle");
@@ -168,6 +176,7 @@
          return false;
       }
 
+      /** isNeighbor checks if the clicked tile is adjacent to the last tile visited**/
       function isNeighbor(){
          if(vm.visited.length !== 0){
             if((Math.abs(vm.curr.x - vm.prev.x) > vm.squareSize) || (Math.abs(vm.curr.y - vm.prev.y) > vm.squareSize)){
@@ -180,6 +189,7 @@
 
       }
 
+      /** isNotDiagonal checks that the clicked tile is not diagonal to the previously selected tile **/
       function isNotDiagonal(){
          if(vm.visited.length !== 0){
          //$log.debug((Math.abs(vm.curr.x - vm.prev.x) === vm.squareSize));
@@ -190,6 +200,7 @@
 
       }
 
+      /** updatePuzzle changes the color of the selected tile, which at this point is vm.prev**/
       function updatePuzzle(){
          vm.context.fillStyle = vm.activeColor;
          if(vm.prev.x !== ""){
@@ -201,21 +212,24 @@
 
       }
 
+      /** checks the number of tiles in the visited list and the number of tiles in the puzzle
+      kicks off the various bits and bobs to advance to the next puzzle if the two numbers match
+      and the most recently clicked tile is valid within the restrictions of the puzzle**/
       function isWin(){
-         if(vm.visited.length === (vm.tiles.length) && vm.validTile == true){
+         if(vm.visited.length === vm.tiles.length && vm.validTile == true){
             $log.debug("Puzzle Complete!");
             vm.wonRound = true;
+         }
+         if(vm.wonRound){
+            winMessage();
             vm.puzzleIndex ++;
-            //show alert
-            //vm.winMessage();
-            //$log.debug(vm.alerts.length);
-            //$log.debug(JSON.stringify(vm.alerts));
-         }
-         if(vm.wonRound && vm.puzzleIndex < vm.puzzleData.length){
-            vm.redraw();
-            vm.clearPuzzle();
-         }
+            $log.debug(vm.alerts.length);
+            if(vm.puzzleIndex < vm.puzzleData.length){
+               vm.redraw();
+               vm.clearPuzzle();
+            }
 
+         }
       }
       /*
               clear puzzle resets the puzzle and all of its saved data back to
@@ -267,18 +281,20 @@
 
 
 
-           vm.winMessage = function(){
-             vm.alerts.push({ msg: 'Puzzle complete!'});
-          };
-          vm.closeAlert = function() {
+         function winMessage(){
+            vm.alerts.push({ msg: 'Puzzle complete!'});
+          }
+         vm.closeAlert = function() {
              vm.alerts.splice(0);
-           };
+         };
 
-      canv.addEventListener('click', function (e) {
-         vm.mouseX = Number(e.pageX - this.getBoundingClientRect().left + $window.pageXOffset);
-         vm.mouseY = Number(e.pageY - this.getBoundingClientRect().top + $window.pageYOffset);
-         runPuzzle(vm.mouseX, vm.mouseY);
-      });
+
+         vm.clickedCanvas = function(e){
+            vm.mouseX = Number(e.pageX - canv.getBoundingClientRect().left + $window.pageXOffset);
+            vm.mouseY = Number(e.pageY - canv.getBoundingClientRect().top + $window.pageYOffset);
+            runPuzzle(vm.mouseX, vm.mouseY);
+
+         }
 
 
       vm.init();

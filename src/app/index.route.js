@@ -34,8 +34,8 @@
       })
       .state('editor', {
         url: '/editor',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
+        templateUrl: 'app/editor/tileEditor.html',
+        controller: 'EditorController',
         controllerAs: 'editor'
       });
 
