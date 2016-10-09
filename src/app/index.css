@@ -166,7 +166,10 @@ margin-top: -10px;
    margin-left:15px;
 }
 .landingHeader{
-   margin-bottom:7vh;
+   margin-bottom:5vh;
+}
+.landingHeaderFirst{
+   margin-bottom:12vh;
 }
 
 .dropPDF{
@@ -334,6 +337,9 @@ button.close{
       transition: opacity 2s cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
       opacity:.15;
    }
+   /** I always forget how to hover or tap one thing and affect another:
+   http://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-a-div-is-hovered
+   **/
    .fa-eye:hover + .footerInner, .fa-eye:focus + .footerInner, .fa-eye:active + .footerInner, .footer > a:hover,
    .footerInner > a:active, .footer > a:focus{
       -webkit-transition:  opacity  1s;
@@ -353,10 +359,6 @@ button.close{
       transition: opacity .5s;
       opacity:0;
    }
-   /** I always forget how to hover or tap one thing and affect another:
-   http://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-a-div-is-hovered
-   **/
-
 }
 
 
