@@ -7,7 +7,8 @@
       var directive = {
          restrict: 'E',
          templateUrl: 'app/components/navbar/uziNav.directive.tpl.html',
-         controller: 'NavController'
+         controller: 'NavController',
+         controllerAs: 'menu'
 
       };
     return directive;
