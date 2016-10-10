@@ -7,11 +7,11 @@
 
   /** @ngInject */
   function NavController() {
-      var vm = this;
+      //var vm = this;
 
-      vm.isNavCollapsed = false;
-      vm.closeMenu = function(){
-         vm.isNavCollapsed = false;
-      };
+      //vm.isNavCollapsed = false;
+      //vm.closeMenu = function(){
+         //vm.isNavCollapsed = false;
+      //};
   }
 })();
