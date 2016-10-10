@@ -20,7 +20,7 @@
 
       <!-- RESUME OPTIONS -->
       <div class="row hidden-xs">
-         <div class="col-xs-5 col-xs-offset-7">
+         <div class="col-xs-7 col-xs-offset-5 col-md-6 col-md-offset-6 col-lg-5 col-lg-offset-7">
             <span class="sectionHeading"> VIEW: </span>
             <div class="btn-group">
                <label class="btn  btn-uzi" ng-model="resume.resumeFilter" uib-btn-radio="'All'">ALL</label>
@@ -31,7 +31,7 @@
          </div>
       </div>
       <div class="row visible-xs">
-         <div class="btn-group pull-right" uib-dropdown is-open="status.isopen">
+         <div class="btn-group pull-right col-xs-3" uib-dropdown is-open="status.isopen">
             <button id="single-button" type="button" class="btn btn-uzi pull-right" uib-dropdown-toggle ng-disabled="disabled">
               VIEW <span class="caret"></span>
             </button>
@@ -80,7 +80,7 @@
                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
                   <p class="text-center sectionHeading">
 
-                     <i class="fa fa-code"></i>
+                     <i class="fa fa-code hidden-sm"></i>
                      <span class="keepTog">
                          LANGUAGES &amp; LIBRARIES
                          <i class="fa fa-caret-down visible-xs" ng-show="isLangCollapsed" ng-click="isLangCollapsed = !isLangCollapsed"></i>
@@ -102,8 +102,7 @@
                </div>
                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
                   <p class="text-center sectionHeading">
-
-                     <i class="fa fa-wrench"></i>
+                     <i class="fa fa-wrench hidden-sm"></i>
                      <span class="keepTog">
                         TOOLS &amp; SOFTWARE
                         <i class="fa fa-caret-down visible-xs" ng-show="isSoftCollapsed" ng-click="isSoftCollapsed = !isSoftCollapsed"></i>
@@ -127,7 +126,7 @@
                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
                   <p class="text-center sectionHeading">
                      <span class="keepTog">
-                        LIMITED EXPOSURE TO
+                        EXPOSED TO
                         <i class="fa fa-caret-down visible-xs" ng-show="isExpCollapsed" ng-click="isExpCollapsed = !isExpCollapsed"></i>
                         <i class="fa fa-caret-up visible-xs" ng-show="!isExpCollapsed" ng-click="isExpCollapsed = !isExpCollapsed"></i>
                      </span>
