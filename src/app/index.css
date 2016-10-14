@@ -261,7 +261,7 @@ a.projLink{
 }
 
 .puzz{
-   top:30vh;
+   /*top:30vh;*/
    margin-right: 0;
    margin-left:0;
 }
@@ -277,11 +277,10 @@ a.projLink{
    background-color:#0E6791;
 }
 
-#canvSml{
+/*#canvSml{
    position:relative;
    top:50px;
-   /*margin-left: 10vw;*/
-}
+}*/
 
 .alert-uzi{
    color: #010E16;

@@ -1,4 +1,4 @@
-<div class="inner">
+<div class="inner" id="allContent">
    <div class="row puzz">
       <div class="col-xs-10 col-sm-offset-1">
 
@@ -14,7 +14,7 @@
                   <button type="button" class="btn btn-primary uziPuzzReset" aria-label="Reset" ng-click="puzz.clearPuzzle()">
                      Reset Puzzle
                   </button>
-                  <p>Select all tiles via click or tap without crossing your own path or using diagonals.</p>
+                  <p>Select all tiles via click or tap without re-crossing your path or using diagonals.</p>
                </div>
             </div>
             <uib-alert class="alert-uzi" ng-repeat="alert in puzz.alerts" close="puzz.closeAlert()" dismiss-on-timeout="3000">
@@ -22,8 +22,8 @@
             </uib-alert>
          </div>
       </div>
-      <div class="row visible-xs">
-         <div class="col-xs-11 col-xs-offset-1 puzzInstructions">
+      <div class="row visible-xs puzzInstructions">
+         <div class="col-xs-11 col-xs-offset-1 ">
             <uib-alert class="alert-uzi" ng-repeat="alert in puzz.alerts" close="puzz.closeAlert()" dismiss-on-timeout="3000">
                {{alert.msg}}
             </uib-alert>
@@ -33,7 +33,7 @@
                   <button type="button" class="btn btn-primary uziPuzzReset" aria-label="Reset" ng-click="puzz.clearPuzzle()">
                      Reset Puzzle
                   </button>
-                  <p class="instrText">Select all tiles via click or tap without crossing your own path or using diagonals.</p>
+                  <p class="instrText">Select all tiles via click or tap without re-crossing your path or using diagonals.</p>
                </div>
             </div>
          </div>

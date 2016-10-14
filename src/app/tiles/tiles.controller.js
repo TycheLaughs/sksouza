@@ -26,6 +26,7 @@
 
 
       var canv =  $document[0].getElementById('canv');
+
       /*
       Determine whether we're on a small screen or not and choose the canvas
       we're using accordingly*/
@@ -290,8 +291,33 @@
 
 
          vm.clickedCanvas = function(e){
+
+            var canvasContainer = $document[0].getElementById('allContent');
+
             vm.mouseX = Number(e.pageX - canv.getBoundingClientRect().left + $window.pageXOffset);
             vm.mouseY = Number(e.pageY - canv.getBoundingClientRect().top + $window.pageYOffset);
+            $log.debug("initially: "+ vm.mouseX + ", "+ vm.mouseY);
+
+
+            if(canvasContainer.scrollTop){
+               $log.debug("using canvasContainer: " + canvasContainer.scrollTop);
+               //vm.mouseY -= canvasContainer.scrollTop;
+               //$log.debug("recalc'd: "+ vm.mouseX + ", "+ vm.mouseY);
+
+            }
+            else if($document[0].documentElement && $document[0].documentElement.scrollTop){
+               $log.debug("using documentElement.scrollTop: " + $document[0].documentElement.scrollTop);
+               vm.mouseY -= (2 * $document[0].documentElement.scrollTop);
+               $log.debug("recalc'd: "+ vm.mouseX + ", "+ vm.mouseY);
+            }
+            else{
+               if($document[0].body && $document[0].body.scrollTop){
+                  $log.debug("using document.body.scrollTop: " + $document[0].body.scrollTop);
+                  vm.mouseY -= (2 * $document[0].body.scrollTop);
+                  $log.debug("recalc'd: "+ vm.mouseX + ", "+ vm.mouseY);
+               }
+            }
+
             runPuzzle(vm.mouseX, vm.mouseY);
 
          }
