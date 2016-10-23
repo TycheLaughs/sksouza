@@ -6,7 +6,7 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
+  function routerConfig($stateProvider, $urlRouterProvider,  $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -58,6 +58,8 @@
       });
 
     $urlRouterProvider.otherwise('/');
+    // use the HTML5 History API
+    $locationProvider.html5Mode(true);
   }
 
 })();
