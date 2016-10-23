@@ -1,0 +1,32 @@
+<div class="row">
+   <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center panel panel-default">
+      <div class="panel-body">
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="4">d4</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="6">d6</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="8">d8</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="10">d10</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="12">d12</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="20">d20</div>
+         <div class="btn btn-lg btn-uzi" ng-model="dice.diceDenomination" uib-btn-radio="100">d100</div>
+         <div class="row">
+            <p>Number of dice: &nbsp;<span class="diceCount">{{dice.diceCount}}</span>
+               <span class="btn btn-lg" ng-click="dice.countDecr()"><i class="fa fa-minus"></i></span>
+               <span class="btn btn-lg" ng-click="dice.countIncr()"><i class="fa fa-plus"></i></span>
+            </p>
+         </div>
+         <div class="row">
+            <div class="btn btn-lg" ng-click="dice.rollDice()">
+               Roll
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center panel panel-default" ng-show="dice.diceRolls.length > 0">
+      <div class="panel-body">
+         <p>Rolled {{dice.diceCount}} d{{dice.diceDenomination}}:</p>
+         <ul class="list-unstyled text-center" ng-repeat="roll in dice.diceRolls track by $index">
+            <li class="diceRolls">{{roll}}</li>
+         </ul>
+      </div>
+   </div>
+</div>

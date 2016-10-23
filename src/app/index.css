@@ -26,6 +26,9 @@ body{
    background-repeat: no-repeat;
    color: #cddada;
 }
+a{
+   cursor:pointer;
+}
 p{
    font-family: 'Ubuntu', sans-serif;
    font-size: 1.5em;
@@ -306,7 +309,23 @@ button.close{
    display:none;
 }
 
+.bigText{
+   font-size: 10em;
+}
 
+input.form-control.counterInput{
+   width:3em;
+}
+.input-group-btn{
+   width: auto;
+}
+.diceCount{
+   font-size: 1.2em;
+   font-weight: bold;
+}
+.diceRolls{
+   font-size: 1.7em;
+}
 
 @media(max-width:767px){
    .landingHeader{

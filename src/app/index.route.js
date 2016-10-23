@@ -37,6 +37,24 @@
         templateUrl: 'app/editor/tileEditor.html',
         controller: 'EditorController',
         controllerAs: 'editor'
+      })
+      .state('tools', {
+        url: '/tools',
+        templateUrl: 'app/tableTools/tableTools.html',
+        controller: 'ToolsController',
+        controllerAs: 'tool'
+      })
+      .state('tools.counter', {
+         url: '/counter',
+        templateUrl: 'app/components/counter/counter.tpl.html',
+        controller: 'CountController',
+        controllerAs: 'counter'
+      })
+      .state('tools.dice', {
+         url: '/dice',
+        templateUrl: 'app/components/diceSim/diceSim.tpl.html',
+        controller: 'DiceController',
+        controllerAs: 'dice'
       });
 
     $urlRouterProvider.otherwise('/');
