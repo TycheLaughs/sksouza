@@ -199,6 +199,18 @@ margin-top: -10px;
    border-radius: 0;
    color:#cddada;
 }
+
+.btn-dice:hover{
+   color:#cddada;
+   border-radius: 8px;
+   border: 1px solid #cddada;
+}
+
+.btn-dice:focus,
+.btn-dice:active{
+   background-color: transparent;
+   color:#cddada;
+}
 /**
 .btn-group > .btn:first-child{
    border-left: none;

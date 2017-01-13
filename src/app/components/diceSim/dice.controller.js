@@ -11,13 +11,17 @@
    vm.diceDenomination = 6;
    vm.diceCount = 1;
    vm.diceRolls = [];
+   vm.nextDiceCount = 1;
+   vm.nextDiceDenom = 6;
 
    vm.rollDice = function(){
       vm.clearRecord();
-      for(var i = 0; i < vm.diceCount; i++){
-         vm.diceRolls.push(vm.rollOneDie(vm.diceDenomination));
+      for(var i = 0; i < vm.nextDiceCount; i++){
+         vm.diceRolls.push(vm.rollOneDie(vm.nextDiceDenom));
          //$log.debug(vm.diceRolls);
       }
+      vm.diceCount = vm.nextDiceCount;
+      vm.diceDenomination = vm.nextDiceDenom;
    };
 
    vm.rollOneDie = function(dieType){
@@ -33,13 +37,15 @@
    };
    vm.countIncr = function(){
      //$log.debug("calling countIncr()");
-     vm.diceCount ++;
+     vm.nextDiceCount ++;
+     //vm.clearRecord();
   };
   vm.countDecr = function(){
      //$log.debug("calling countDecr()");
-     if(vm.diceCount > 1){
-       vm.diceCount --;
+     if(vm.nextDiceCount > 1){
+       vm.nextDiceCount --;
       }
+      //m.clearRecord();
    };
 
 
