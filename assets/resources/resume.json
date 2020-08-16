@@ -29,15 +29,21 @@
          ],
       "SKILLS":{
          "LANG": [
+            {"name": "Angular 2+",
+            "cat": ["Interactive", "CS"]},
             {"name": "Angular Material",
             "cat": ["Interactive"]},
             {"name": "AngularJS" ,
             "cat": ["Interactive"]},
+            {"name": "Ansible and AWX",
+            "cat": ["CS"]},
             {"name": "C",
             "cat": ["CS"]},
             {"name": "C++" ,
             "cat": ["CS", "Interactive"]},
             {"name": "CSS3",
+            "cat": ["Interactive"]},
+            {"name": "ES6",
             "cat": ["Interactive"]},
             {"name": "HTML5 Canvas and SVG",
             "cat": ["Interactive"]},
@@ -59,8 +65,12 @@
             "cat": ["Interactive"]},
             {"name": "Twitter Bootstrap",
             "cat": ["Interactive"]},
+            {"name": "Typescript",
+            "cat": ["Interactive", "CS"]},
             {"name": "Unit Tests with Karma & Jasmine",
             "cat": ["Interactive","CS"]},
+            {"name": "Vue.js",
+            "cat": ["Interactive", "CS"]},
             {"name": "XML",
             "cat": ["Interactive","CS"]}
          ],
@@ -77,18 +87,16 @@
             "cat": ["Interactive","CS"]},
             {"name": "Inkscape",
             "cat": ["Interactive"]},
-            {"name": "IntelliJ IDEA",
+            {"name": "IntelliJ IDEA & Webstorm",
             "cat": ["Interactive","CS"]},
-            {"name": "Microsoft Visual Studio",
-            "cat": ["CS"]},
+            {"name": "JIRA and Confluence",
+            "cat": ["CS","Interactive"]},
             {"name": "Unity3D",
             "cat": ["Interactive"]},
             {"name": "Unreal Engine 3",
             "cat": ["Interactive"]},
             {"name": "ZBrush",
             "cat": ["Interactive"]}
-
-
             ]
       },
       "EXPOSEDTO": [
@@ -96,44 +104,84 @@
          "cat": ["CS","Interactive"]},
          {"name": "C#",
          "cat": ["CS","Interactive"]},
-         {"name": "ES6",
-         "cat": ["Interactive"]},
+         {"name": "Docker",
+         "cat": [ "CS"]},
+         {"name": "Eclipse",
+         "cat": ["CS"]},
          {"name": "Flask",
-         "cat": ["Interactive"]},
+         "cat": ["Interactive", "CS"]},
+         {"name": "Go (Golang)",
+         "cat": ["Interactive", "CS"]},
          {"name": "Grunt",
          "cat": ["Interactive"]},
          {"name": "Gulp",
          "cat": ["Interactive"]},
          {"name": "IA32",
          "cat": ["CS"]},
-         {"name": "JIRA and Confluence",
-         "cat": ["CS","Interactive"]},
+         {"name": "Jest",
+         "cat": ["Interactive"]},
          {"name": "Linux & Unix Environments",
          "cat": ["CS","Interactive"]},
+         {"name": "Microsoft Visual Studio",
+         "cat": ["CS"]},
          {"name": "MongoDB",
          "cat": ["Interactive"]},
-         {"name": "Netbeans",
-         "cat": ["CS"]},
          {"name": "NodeJS",
          "cat": ["Interactive"]},
-         {"name": "Perl",
-         "cat": ["CS"]},
          {"name": "PHP",
          "cat": ["CS","Interactive"]},
-         {"name": "Scheme",
-         "cat": ["CS"]},
-         {"name": "SFML",
-         "cat": ["CS", "Interactive"]},
+         {"name": "Postgres",
+         "cat": ["Interactive"]},
          {"name": "TDD",
-         "cat": ["CS", "Interactive"]}
+         "cat": ["CS", "Interactive"]},
+         {"name": "Webpack",
+         "cat": ["Interactive"]}
 
       ],
       "XP":
          [
-            {
+         {
                "xId": 0,
+               "employer":"Fidelity Investments",
+               "employerURL":"https://www.fidelity.com",
+               "location":"Merrimack, NH",
+               "startDate":"June 2018",
+               "endDate":"Present",
+               "title":"Software Engineer",
+               "irrelevant":"false",
+               "cat": ["CS", "Interactive"],
+               "desc":
+                  [
+                "Maintained legacy AngularJS app and added several, large features given business need",
+                "Collaborated on UI implementation in Angular 2+ on an internal application for managing patching of internal infrastructure; maintained unit test coverage of front end at over 90%",
+                "Mentor interns and new Leap program graduates in testing and other best practices",
+                "Collaborate on a new, internal tool for managing infrastructure capacity in relation to funding governance and hardware purchases",
+                "Advocate for comprehensive automated testing as a part of the development process"
+               ]
+            },
+         {
+               "xId": 1,
+               "employer":"Fidelity Investments",
+               "employerURL":"https://www.fidelity.com",
+               "location":"Cary, NC; Merrimack, NH",
+               "startDate":"January 2017",
+               "endDate":"June 2018",
+               "title":"Associate Software Engineer",
+               "irrelevant":"false",
+               "cat": ["CS", "Interactive"],
+               "desc":
+                  [
+                     "Underwent training during Leap program to ensure proficiency in core technologies and processes used by Fidelity technologists",
+                     "Worked on front end of internal, informational web application per given specification",
+                     "Maintained legacy application for providing required specifications for server provisioning",
+                     "Became the sole maintainer of an internal AngularJS, Node and MySQL  application for gathering requirements for server provisioning",
+                     "Participted in realignment of team into more focused Agile practices"
+                  ]
+            },
+            {
+               "xId": 2,
                "employer":"CLASS, University of Massachusetts Lowell",
-               "employerURL":"",
+               "employerURL":"http://www.uml.edu/class/",
                "location":"Lowell, MA",
                "startDate":"September 2014",
                "endDate":"August 2016",
@@ -148,9 +196,9 @@
                   ]
             },
             {
-               "xId": 1,
+               "xId": 3,
                "employer":"Crescendo Content Marketing",
-               "employerURL":"",
+               "employerURL":"http://www.crescendocontent.com/",
                "location":"Woburn, MA",
                "startDate":"July 2015",
                "endDate":"August 2015",
@@ -164,9 +212,9 @@
                   ]
             },
             {
-               "xId": 2,
+               "xId": 4,
                "employer":"Percussion Software",
-               "employerURL":"",
+               "employerURL":"https://www.percussion.com/index.html",
                "location":"Woburn, MA",
                "startDate":"May 2015",
                "endDate":"July 2015",
@@ -182,9 +230,9 @@
             },
 
             {
-               "xId": 3,
+               "xId": 5,
                "employer":"University of Massachusetts Lowell",
-               "employerURL":"",
+               "employerURL":"https://www.uml.edu/",
                "location":"Lowell, MA",
                "startDate":"September 2014",
                "endDate":"December 2014",
@@ -197,9 +245,9 @@
                   ]
             },
             {
-               "xId": 4,
+               "xId": 6,
                "employer":"Canobie Lake Park",
-               "employerURL":"",
+               "employerURL":"https://www.canobie.com/",
                "location":"Salem, NH",
                "startDate":" August 2013",
                "endDate":"October 2013",
@@ -213,9 +261,9 @@
                   ]
             },
             {
-               "xId": 5,
+               "xId": 7,
                "employer":"United Parcel Service",
-               "employerURL":"",
+               "employerURL":"https://www.ups.com/us/en/Home.page",
                "location":"Nashua, NH",
                "startDate":"November 2012",
                "endDate":"December 2012",
@@ -228,7 +276,7 @@
                   ]
             },
             {
-               "xId": 6,
+               "xId": 8,
                "employer":"Macy's Inc.",
                "employerURL":"",
                "location":"Salem, NH",
@@ -245,8 +293,7 @@
                   ]
             }
 
-         ]
-      ,
+         ],
       "PROJECTS":
          [
             {
