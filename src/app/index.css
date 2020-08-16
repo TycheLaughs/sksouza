@@ -136,7 +136,7 @@ margin-top: -10px;
    border-width:2px;
 }
 .barMod{
-   max-height:50px;
+   max-height:6vh;
 }
 .myName{
    font-family:  'Muli', sans-serif;
@@ -151,8 +151,8 @@ margin-top: -10px;
 
 .myLogo{
    position:relative;
-   top:.7vh;
-   width:7vw;
+   top: 4px;
+   width: 7vw;
    height: 5vh;
    color:#70C9E3;
    fill: #70C9E3;
